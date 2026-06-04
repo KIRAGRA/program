@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nishimurakira\\Desktop\\program\\Ctemplate2\\",
+  "WorkspaceRootPath": "D:\\GitHub\\program\\Ctemplate2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDFA52EF-45B6-4BA2-93C9-C079C2EF7E5C}|Ctemplate2.vcxproj|C:\\Users\\nishimurakira\\Desktop\\program\\Ctemplate2\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{FDFA52EF-45B6-4BA2-93C9-C079C2EF7E5C}|Ctemplate2.vcxproj|D:\\GitHub\\program\\Ctemplate2\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FDFA52EF-45B6-4BA2-93C9-C079C2EF7E5C}|Ctemplate2.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\nishimurakira\\Desktop\\program\\Ctemplate2\\main.c",
+              "DocumentMoniker": "D:\\GitHub\\program\\Ctemplate2\\main.c",
               "RelativeDocumentMoniker": "main.c",
-              "ToolTip": "C:\\Users\\nishimurakira\\Desktop\\program\\Ctemplate2\\main.c",
+              "ToolTip": "D:\\GitHub\\program\\Ctemplate2\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAQwAUAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-06-04T02:03:19.483Z",
               "EditorCaption": ""
