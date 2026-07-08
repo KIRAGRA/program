@@ -22,6 +22,14 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	int ballVy = 5;
 	int ballR = 10;
 
+	//ラケットを動かすための変数
+	int racketX = WIDTH / 2;
+	int racketY = HEIGHT - 50;
+	int racketW = 120;
+	int racketH = 12;
+
+	int score = 0;//スコアを代入
+	int highScore = 1000;//ハイスコアを代入
 
 	int fpsCount = 0;
 	int currentFps = 0;
@@ -42,9 +50,37 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		ballY = ballY + ballVy;
 		if (ballY < ballR && ballVy < 0)ballVy = -ballVy;
 		if (ballY > HEIGHT && ballVy > 0)ballVy = -ballVy;
-		DrawCircle(ballX, ballY, ballR, 0xff0000, TRUE);//ボール
+		DrawCircle(ballX, ballY, ballR, GetColor(255,0,255), TRUE);//ボール
+
+		//ラケットの処理
+		if (CheckHitKey(KEY_INPUT_LEFT) == 1)//左キー押し下し
+		{
+			racketX = racketX - 10;
+			if (racketX < racketW / 2)racketX = racketW / 2;
+		}
+		if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//右キー押し下し
+		{
+			racketX = racketX + 10;
+			if (racketX > WIDTH - racketW / 2)racketX = WIDTH - racketW / 2;
+		}
+		DrawBox(racketX - racketW / 2, racketY - racketH / 2, racketX + racketW / 2,racketY +  racketH / 2, GetColor(255, 0, 255),TRUE);//ラケット
 
 
+
+		//ヒットチェック
+		int dx = ballX - racketX;//x軸方向の距離
+		int dy = ballY - racketY;//y軸方向の距離
+		if (-racketW / 2 - 10 < dx && dx < racketW / 2 + 10 && -20 < dy && dy < 0)
+		{
+			ballVy = -5 - rand() % 5;
+			score = score + 100;
+			if (score > highScore)highScore = score;//ハイスコアの更新
+
+		}
+
+		SetFontSize(30);
+		DrawFomatString(10,10,GetColor(255,0,255))
+			
 
 		// 画面にFPSを表示
 		DrawFormatString(0, 0, GetColor(255, 255, 255), "FPS: %d", currentFps);

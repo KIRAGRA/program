@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nishimurakira\\Desktop\\program\\TenisGame\\",
+  "WorkspaceRootPath": "C:\\Users\\Fugedaku!\\Desktop\\program\\TenisGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{744ABE70-1A99-482C-A0F1-070A4ADA7216}|TenisGame.vcxproj|C:\\Users\\nishimurakira\\Desktop\\program\\TenisGame\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{744ABE70-1A99-482C-A0F1-070A4ADA7216}|TenisGame.vcxproj|C:\\Users\\Fugedaku!\\Desktop\\program\\TenisGame\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{744ABE70-1A99-482C-A0F1-070A4ADA7216}|TenisGame.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\nishimurakira\\Desktop\\program\\TenisGame\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Fugedaku!\\Desktop\\program\\TenisGame\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\nishimurakira\\Desktop\\program\\TenisGame\\main.cpp",
+              "ToolTip": "C:\\Users\\Fugedaku!\\Desktop\\program\\TenisGame\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAASwEcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-07-08T08:28:40.254Z",
               "EditorCaption": ""
