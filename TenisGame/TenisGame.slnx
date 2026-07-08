@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TenisGame.vcxproj" Id="744abe70-1a99-482c-a0f1-070a4ada7216" />
+</Solution>
