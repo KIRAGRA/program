@@ -1,0 +1,36 @@
+﻿  Bg.cpp
+  Item.cpp
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.h(20,39): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'Item.cpp' をコンパイルしています)
+  
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.h(21,39): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'Item.cpp' をコンパイルしています)
+  
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.cpp(23,5): warning C4244: '初期化中': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.cpp(24,5): warning C4244: '初期化中': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.cpp(74,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.cpp(74,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  main.cpp
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.h(20,39): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.h(21,39): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+  Player.cpp
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Player.cpp(136,21): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Player.cpp(136,16): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Player.cpp(142,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Player.cpp(142,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  SceneMain.cpp
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.h(20,39): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
+  
+C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\Item.h(21,39): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
+  
+  コード生成しています。
+  Previous IPDB not found, fall back to full compilation.
+  All 30 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  コード生成が終了しました。
+  DxLib_FirstGame.vcxproj -> C:\Users\nishimurakira\Desktop\program\DxLib_FirstGame\x64\Release\DxLib_FirstGame.exe

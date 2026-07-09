@@ -79,7 +79,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		}
 
 		SetFontSize(30);
-		DrawFomatString(10,10,GetColor(255,0,255))
+		//DrawFormatString(10, 10, GetColor(255, 0, 255));
 			
 
 		// 画面にFPSを表示
