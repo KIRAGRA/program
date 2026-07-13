@@ -23,6 +23,8 @@ public:
 		TRUCK
 	};
 
+	
+	
 	void DrawCar(int x, int y, int type);
 		
 

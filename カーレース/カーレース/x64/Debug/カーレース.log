@@ -1,4 +1,2 @@
-﻿  Car.cpp
-C:\Users\nishimurakira\Desktop\program\カーレース\Car.cpp(15,2): warning C4156: 'delete' の配列でない形式を使った配列の削除は、定義されていません。
-C:\Users\nishimurakira\Desktop\program\カーレース\Car.cpp(15,2): warning C4154: 配列の delete が定義されていません。配列は、ポインターに変換されます。
-  カーレース.vcxproj -> C:\Users\nishimurakira\Desktop\program\カーレース\x64\Debug\カーレース.exe
+﻿  Mouse.cpp
+C:\Users\nishimurakira\Documents\GitHub\program\カーレース\Mouse.cpp(41,2): error C3861: 'DrawCar': 識別子が見つかりませんでした

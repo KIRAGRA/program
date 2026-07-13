@@ -153,12 +153,14 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainScene.cpp" />
+    <ClCompile Include="Mouse.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bg.h" />
     <ClInclude Include="Car.h" />
     <ClInclude Include="GameDefine.h" />
     <ClInclude Include="MainScene.h" />
+    <ClInclude Include="Mouse.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
