@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+class Mouse;
 class Bg;
 class Car;
 
@@ -22,7 +23,7 @@ private:
 
 	Car* m_carsH;
 
-
+	
 
 };
 

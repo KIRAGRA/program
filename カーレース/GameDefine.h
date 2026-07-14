@@ -9,6 +9,9 @@ namespace GameDefine
 	//車の最大数
 	constexpr int CAR_MAX = 4;
 
+	//コンピューターが動かす車両の配列
+	constexpr int COM_MAX = 8;
+
 	//プレイヤーの車
 	
 	

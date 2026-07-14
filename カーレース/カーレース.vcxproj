@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClCompile Include="Bg.cpp" />
     <ClCompile Include="Car.cpp" />
+    <ClCompile Include="Computer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainScene.cpp" />
     <ClCompile Include="Mouse.cpp" />
@@ -158,6 +159,7 @@
   <ItemGroup>
     <ClInclude Include="Bg.h" />
     <ClInclude Include="Car.h" />
+    <ClInclude Include="Computer.h" />
     <ClInclude Include="GameDefine.h" />
     <ClInclude Include="MainScene.h" />
     <ClInclude Include="Mouse.h" />

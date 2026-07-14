@@ -2,6 +2,8 @@
 #include "GameDefine.h"
 using namespace GameDefine;
 
+class Mouse;
+class Computer;
 
 class Car
 {
@@ -33,6 +35,11 @@ private:
 	//車のハンドルの配列
 	int  m_carsH[CAR_MAX];
 
+	Mouse* m_pgetMouse;
 
+	Computer* m_pgetComputer;
+
+
+	
 };
 
