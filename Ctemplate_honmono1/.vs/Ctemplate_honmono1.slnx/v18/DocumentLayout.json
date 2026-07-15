@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\program\\Ctemplate_honmono1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF933AD-FF0B-464C-A2F5-43E0EFE12D70}|Ctemplate_honmono1\\Ctemplate_honmono1.vcxproj|D:\\GitHub\\program\\Ctemplate_honmono1\\Ctemplate_honmono1\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0AF933AD-FF0B-464C-A2F5-43E0EFE12D70}|Ctemplate_honmono1\\Ctemplate_honmono1.vcxproj|solutionrelative:Ctemplate_honmono1\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.c",
+              "DocumentMoniker": "D:\\GitHub\\program\\Ctemplate_honmono1\\Ctemplate_honmono1\\main.c",
+              "RelativeDocumentMoniker": "Ctemplate_honmono1\\main.c",
+              "ToolTip": "D:\\GitHub\\program\\Ctemplate_honmono1\\Ctemplate_honmono1\\main.c",
+              "RelativeToolTip": "Ctemplate_honmono1\\main.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-06-04T15:33:21.488Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

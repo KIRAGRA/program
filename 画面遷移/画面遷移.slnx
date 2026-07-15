@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="画面遷移.vcxproj" Id="b341b7ce-1a3b-4eb8-81b2-9e95431db89b" />
+</Solution>

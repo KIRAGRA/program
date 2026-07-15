@@ -1,3 +1,7 @@
 ﻿  main.cpp
+<<<<<<< Updated upstream
   LINK : 前回のインクリメンタル リンクで C:\Users\nishimurakira\Documents\GitHub\program\TenisGame\x64\Debug\TenisGame.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
   TenisGame.vcxproj -> C:\Users\nishimurakira\Documents\GitHub\program\TenisGame\x64\Debug\TenisGame.exe
+=======
+  TenisGame.vcxproj -> D:\GitHub\program\TenisGame\x64\Debug\TenisGame.exe
+>>>>>>> Stashed changes

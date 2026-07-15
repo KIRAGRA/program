@@ -2,7 +2,11 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< Updated upstream
       <FullPath>C:\Users\nishimurakira\Documents\GitHub\program\TenisGame\x64\Debug\TenisGame.exe</FullPath>
+=======
+      <FullPath>D:\GitHub\program\TenisGame\x64\Debug\TenisGame.exe</FullPath>
+>>>>>>> Stashed changes
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
