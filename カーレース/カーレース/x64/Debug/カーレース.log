@@ -1,2 +1,14 @@
-﻿  Computer.cpp
+﻿  Car.cpp
+C:\Users\nishimurakira\Documents\GitHub\program\カーレース\Computer.h(41,6): warning C4200: 非標準の拡張機能が使用されています: 構造体または共用体中にサイズが 0 の配列があります。
+  (ソース ファイル 'Car.cpp' をコンパイルしています)
+      C:\Users\nishimurakira\Documents\GitHub\program\カーレース\Computer.h(41,6):
+      このメンバーは、既定のコンストラクターまたはコピー/移動代入演算子により無視されます
+  
+  Computer.cpp
+C:\Users\nishimurakira\Documents\GitHub\program\カーレース\Computer.h(41,6): warning C4200: 非標準の拡張機能が使用されています: 構造体または共用体中にサイズが 0 の配列があります。
+  (ソース ファイル 'Computer.cpp' をコンパイルしています)
+      C:\Users\nishimurakira\Documents\GitHub\program\カーレース\Computer.h(41,6):
+      このメンバーは、既定のコンストラクターまたはコピー/移動代入演算子により無視されます
+  
+  コードを生成中...
   カーレース.vcxproj -> C:\Users\nishimurakira\Documents\GitHub\program\カーレース\x64\Debug\カーレース.exe

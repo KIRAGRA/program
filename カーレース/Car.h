@@ -28,12 +28,19 @@ public:
 	
 	
 	void DrawCar(int x, int y, int type);
+
+	void BoxCol(int x, int y);
+
+
 		
+	
 
 
 private:
 	//車のハンドルの配列
 	int  m_carsH[CAR_MAX];
+
+
 
 	Mouse* m_pgetMouse;
 

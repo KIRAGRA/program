@@ -33,7 +33,7 @@ void Computer::End()
 void Computer::Update()
 {
 
-	for (int i = 0; i < COM_MAX; i++)
+	for (int i = 0; i <= COM_MAX; i++)
 	{
 		m_computerY[i] += (i + 1);
 
