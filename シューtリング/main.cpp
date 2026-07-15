@@ -54,6 +54,8 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		DrawFormatString(0, 0, GetColor(255, 255, 255), "FPS: %d", currentFps);
 		DrawFormatString(0, 20, GetColor(255, 255, 255), "Total Frames: %d", totalFrames);
 
+		scrollBG(1);//【仮】背景スクロール
+
 		ScreenFlip();
 
 		fpsCount++;
@@ -91,6 +93,31 @@ void initGame(void)
 	for (int i = 0; i < IMG_ENEMY_MAX; i++)
 	{
 		char file[] = "image/enemy.png";
-		file[i]
+		file[11] = (char)('0' + i);
+		imgEnemy[i] = LoadGraph(file);
 	}
+	imgExplosion = LoadGraph("image/explosion.png");//爆発演出
+	imgItem = LoadGraph("image/item.png");//アイテム
+
+	bgm = LoadSoundMem("sound/bgm.mp.3");
+	jinOver = LoadSoundMem("sound/gameover.mp3");
+	jinClear = LoadSoundMem("sound/stageclear.mp3");
+	seExpl = LoadSoundMem("sound/explosion.mp3");
+	seItem = LoadSoundMem("sound/item.mp3");
+	seShot = LoadSoundMem("sound/shot.mp3");
+	ChangeVolumeSoundMem(128, bgm);
+	ChangeVolumeSoundMem(128, jinOver);
+	ChangeVolumeSoundMem(128, jinClear);
+}
+void scrollBG(int spd)
+{
+	static int galaxyY, floorY, wallY;//スクロール位置を管理する変数(静的記憶領域に保持される)
+	galaxyY = (galaxyY + spd) % HEIGHT;//星空(宇宙)
+	DrawGraph(0, galaxyY - HEIGHT, imgGalaxy, false);
+	DrawGraph(0, galaxyY, imgGalaxy, false);
+	floorY = (floorY + spd * 2) % 120;//床
+	for (int i = -1; i < 6;i++)DrawGraph(240, floorY + i * 120, imgFloor, true);
+	wallY = (wallY + spd * 4) % 240;
+	DrawGraph(0, wallY - 240, imgWallL, true);
+	DrawGraph(WIDTH - 300, wallY - 240, imgWallR, true);
 }

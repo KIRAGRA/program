@@ -17,3 +17,4 @@ struct OBJECT
 };
 
 void initGame(void);
+void scrollBG(int spd);
