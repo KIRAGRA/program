@@ -18,3 +18,7 @@ struct OBJECT
 
 void initGame(void);
 void scrollBG(int spd);
+void initVariable(void);
+void drawImage(int img, int x, int y);
+void movePlayer(void);
+

@@ -8,6 +8,7 @@ const int FPS = 60;
 const int IMG_ENEMY_MAX = 5; //敵の画像の枚数(種類)
 //グローバル変数
 //ここでゲームに用いる変数や配列を定義する
+struct OBJECT player; //自機用の構造体の変数
 int imgGalaxy, imgFloor, imgWallL, imgWallR;//背景画像
 int imgFighter, imgBullet;//自機と自機の弾の画像
 int imgEnemy[IMG_ENEMY_MAX];//敵機の画像
@@ -39,6 +40,8 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	int currentFps = 0;
 	int startTime = GetNowCount();
 	int totalFrames = 0;
+	initGame(); //初期化用の関数を呼び出す
+	initVariable();//【仮】ゲームを完成させる際に呼び出し位置を変える
 
 	while (ProcessMessage() == 0)
 	{
@@ -55,6 +58,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		DrawFormatString(0, 20, GetColor(255, 255, 255), "Total Frames: %d", totalFrames);
 
 		scrollBG(1);//【仮】背景スクロール
+		movePlayer();//自機の操作
 
 		ScreenFlip();
 
@@ -78,6 +82,56 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	DxLib_End();                   // ＤＸライブラリ使用の終了処理
 	return 0;                      // ソフトの終了 
 }
+
+//ゲーム開始時の初期値を代入する関数
+void initVariable(void)
+{
+	player.x = WIDTH / 2;
+	player.y = HEIGHT / 2;
+	player.vx = 5;
+	player.vy = 5;
+}
+
+//中心座標を指定して画像を表示する関数
+void drawImage(int img, int x, int y)
+{
+	int w, h;
+	GetGraphSize(img, &w, &h);
+	DrawGraph(x - w / 2, y - h / 2, img, true);
+}
+
+//自機を動かす関数
+void movePlayer(void)
+{
+	if (CheckHitKey(KEY_INPUT_UP))//上キーで上に移動
+	{
+		player.y -= player.vy;
+		if (player.y > HEIGHT - 30)player.y = 30;
+	}
+	if (CheckHitKey(KEY_INPUT_DOWN))//下キーで下に移動
+	{
+		player.y += player.vy;
+		if (player.y > HEIGHT - 30)player.y = HEIGHT - 30;
+	}
+	if (CheckHitKey(KEY_INPUT_LEFT))//左キーで左に移動
+	{
+		player.x -= player.vx;
+		if (player.x < 30)
+		{
+			player.x = 30;
+		}
+	}
+	if (CheckHitKey(KEY_INPUT_RIGHT))//右キーで右に移動
+	{
+		player.x += player.vx;
+		if (player.x > WIDTH - 30)
+		{
+			player.x = WIDTH - 30;
+		}
+	}
+	drawImage(imgFighter, player.x, player.y);//自機の描画
+}
+
 void initGame(void)
 {
 	//背景用の画像を読み込み
