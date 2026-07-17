@@ -1,5 +1,6 @@
 ﻿#include "DxLib.h"
 #include "GameDefine.h"
+#include "stdlib.h"
 
 
 //定数の定義
@@ -7,10 +8,17 @@ const int WIDTH = 1200,HEIGHT = 720;
 const int FPS = 60;
 const int IMG_ENEMY_MAX = 5; //敵の画像の枚数(種類)
 const int BULLET_MAX = 100;//自機が発射する弾の最大数
+const int ENEMY_MAX = 100;//敵機の数の最大数
+const int STAGE_DISTANCE = FPS * 60;//ステージの長さ
+enum {ENE_BULLET,ENE_ZAKO1,ENE_ZAKO2,ENE_ZAKO3,ENE_ZAKO4};//敵機の種類
 //グローバル変数
+
+int distance = 0;//ステージ終端までの距離
+
 //ここでゲームに用いる変数や配列を定義する
 struct OBJECT player; //自機用の構造体の変数
 struct OBJECT bullet[BULLET_MAX]; //自機用の構造体の変数
+struct OBJECT enemy[ENEMY_MAX];//敵機用の構造体の配列
 int imgGalaxy, imgFloor, imgWallL, imgWallR;//背景画像
 int imgFighter, imgBullet;//自機と自機の弾の画像
 int imgEnemy[IMG_ENEMY_MAX];//敵機の画像
@@ -44,6 +52,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	int totalFrames = 0;
 	initGame(); //初期化用の関数を呼び出す
 	initVariable();//【仮】ゲームを完成させる際に呼び出し位置を変える
+	distance = STAGE_DISTANCE;//【記述位置は仮】ステージの長さを代入
 
 	while (ProcessMessage() == 0)
 	{
@@ -60,6 +69,23 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		DrawFormatString(0, 20, GetColor(255, 255, 255), "Total Frames: %d", totalFrames);
 
 		scrollBG(1);//【仮】背景スクロール
+		if (distance % 60 == 1)distance--;//距離の計算
+		DrawFormatString(0, 0, 0xffff00, "distance=%d", distance);//【仮】確認用
+		if (distance % 60 == 1)//【仮】雑魚の出現
+		{
+			int x = 100 + rand() % (WIDTH - 200);//出現位置x座標
+			int y = -50;
+			int e = 1 + rand() % 2;//出現する雑魚敵の種類
+			if (e == ENE_ZAKO1)setEnemy(x, y, 0, 3, ENE_ZAKO1, imgEnemy[ENE_ZAKO1], 1);
+			if(e == ENE_ZAKO2)
+			{
+				int vx = 0;
+				if (player.x < x - 50)vx = -3;
+				if (player.x > x - 50)vx = 3;
+				setEnemy(x, -100, vx, 5, ENE_ZAKO2, imgEnemy[ENE_ZAKO2], 3);
+			}
+		}
+		moveEnemy();
 		movePlayer();//自機の操作
 		moveBullet();//弾の制御
 
@@ -153,6 +179,10 @@ void movePlayer(void)
 			setBullet();
 			countSpcKey++;
 		}
+		else
+		{
+			countSpcKey = 0;
+		}
 	}
 	countSpcKey = CheckHitKey(KEY_INPUT_SPACE);
 
@@ -234,5 +264,38 @@ void moveBullet(void)
 			bullet[i].state = 0;
 		}
 
+	}
+}
+int setEnemy(int x, int y, int vx, int vy, int ptn, int img, int sld)
+{
+	for (int i = 0; i < ENEMY_MAX; i++)
+	{
+		if (enemy[i].state == 0)
+		{
+			enemy[i].x = x;
+			enemy[i].y = y;
+			enemy[i].vx = vx;
+			enemy[i].vy = vy;
+			enemy[i].state = 0;
+			enemy[i].pattern = ptn;
+			enemy[i].image = img;
+//			enemy[i].shiled = sld * stage;//ステージが進むほど敵が固くなる
+// 			GetGraphSize(img,&enemy[i].wid,&enemy[i].hei);//画像の幅と高さを代入
+			return i;
+		}
+	}
+	return -1;
+
+}
+//敵機を動かす
+void moveEnemy(void)
+{
+	for (int i = 0;i < ENEMY_MAX; i++)
+	{
+		if (enemy[i].state == 0)continue;//空いている配列なら処理しない
+		enemy[i].x += enemy[i].vx;//敵機の移動
+		enemy[i].y += enemy[i].vy;
+		drawImage(enemy[i].image, enemy[i].x, enemy[i].y);//敵機の描画
+		//画面外に出たか
 	}
 }

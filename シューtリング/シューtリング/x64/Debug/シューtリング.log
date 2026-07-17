@@ -1,2 +1,2 @@
 ﻿  main.cpp
-  シューtリング.vcxproj -> C:\Users\nishimurakira\Desktop\program\シューtリング\x64\Debug\シューtリング.exe
+C:\Users\nishimurakira\Documents\GitHub\program\シューtリング\main.cpp(273,1): error C4716: 'setEnemy': 値を返さなければいけません

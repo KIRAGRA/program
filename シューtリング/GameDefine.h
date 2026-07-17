@@ -27,4 +27,6 @@ void drawImage(int img, int x, int y);
 void movePlayer(void);
 void moveBullet(void);
 void setBullet(void);
+int setEnemy(int x, int y, int vx, int vy, int ptn, int img, int sld);
+void moveEnemy(void);
 
