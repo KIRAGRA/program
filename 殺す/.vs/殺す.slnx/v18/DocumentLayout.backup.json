@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\GitHub\\program\\\u6BBA\u3059\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0B424F2-7EEA-40B9-AB00-C585565BCCF6}|\u6BBA\u3059.vcxproj|D:\\GitHub\\program\\\u6BBA\u3059\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0B424F2-7EEA-40B9-AB00-C585565BCCF6}|\u6BBA\u3059.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0B424F2-7EEA-40B9-AB00-C585565BCCF6}|\u6BBA\u3059.vcxproj|D:\\GitHub\\program\\\u6BBA\u3059\\GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0B424F2-7EEA-40B9-AB00-C585565BCCF6}|\u6BBA\u3059.vcxproj|solutionrelative:GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B424F2-7EEA-40B9-AB00-C585565BCCF6}|\u6BBA\u3059.vcxproj|D:\\GitHub\\program\\\u6BBA\u3059\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0B424F2-7EEA-40B9-AB00-C585565BCCF6}|\u6BBA\u3059.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameDefine.h",
               "DocumentMoniker": "D:\\GitHub\\program\\\u6BBA\u3059\\GameDefine.h",
               "RelativeDocumentMoniker": "GameDefine.h",
@@ -35,7 +35,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\GitHub\\program\\\u6BBA\u3059\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",

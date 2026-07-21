@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="殺す.vcxproj" />
+  <Project Path="殺す.vcxproj" Id="a0b424f2-7eea-40b9-ab00-c585565bccf6" />
 </Solution>
