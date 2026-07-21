@@ -1,0 +1,8 @@
+﻿  main.cpp
+D:\GitHub\program\殺す\GameDefine.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+D:\GitHub\program\殺す\main.cpp(277,89): warning C4390: ';': 制御が空の文が見つかりました。意図した記述でしょうか?
+D:\GitHub\program\殺す\main.cpp(353,20): warning C4244: '*=': 'double' から 'int' への変換です。データが失われる可能性があります。
+D:\GitHub\program\殺す\main.cpp(400,56): warning C4390: ';': 制御が空の文が見つかりました。意図した記述でしょうか?
+  殺す.vcxproj -> D:\GitHub\program\殺す\x64\Debug\殺す.exe

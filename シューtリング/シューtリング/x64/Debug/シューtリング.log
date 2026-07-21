@@ -1,2 +1,5 @@
-﻿main.obj : error LNK2019: 未解決の外部シンボル "void __cdecl drawParameter(void)" (?drawParameter@@YAXXZ) が関数 WinMain で参照されました
-C:\Users\nishimurakira\Documents\GitHub\program\シューtリング\x64\Debug\シューtリング.exe : fatal error LNK1120: 1 件の未解決の外部参照
+﻿  main.cpp
+D:\GitHub\program\シューtリング\main.cpp(277,89): warning C4390: ';': 制御が空の文が見つかりました。意図した記述でしょうか?
+D:\GitHub\program\シューtリング\main.cpp(353,20): warning C4244: '*=': 'double' から 'int' への変換です。データが失われる可能性があります。
+D:\GitHub\program\シューtリング\main.cpp(400,56): warning C4390: ';': 制御が空の文が見つかりました。意図した記述でしょうか?
+  シューtリング.vcxproj -> D:\GitHub\program\シューtリング\x64\Debug\シューtリング.exe

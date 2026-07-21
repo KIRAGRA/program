@@ -4,27 +4,35 @@
 
 
 //定数の定義
+
 const int WIDTH = 1200,HEIGHT = 720;
 const int FPS = 60;
 const int IMG_ENEMY_MAX = 5; //敵の画像の枚数(種類)
 const int BULLET_MAX = 100;//自機が発射する弾の最大数
 const int ENEMY_MAX = 100;//敵機の数の最大数
 const int STAGE_DISTANCE = FPS * 60;//ステージの長さ
-const int   PLAYER_SHIELD_MAX = 8;//自機のシールドの最大数
+const int PLAYER_SHIELD_MAX = 8;//自機のシールドの最大数
+const int EFFECT_MAX = 100;//エフェクトの最大数
+const int ITEM_TYEP = 3;//アイテムの種類
+const int WEAPON_LV_MAX = 10;//武器レベルの最大値
+const int PLAYER_SPEED_MAX = 20;//自機の速さの最大数
 enum {ENE_BULLET,ENE_ZAKO1,ENE_ZAKO2,ENE_ZAKO3,ENE_BOSS};//敵機の種類
+enum {EFF_EXPLODE,EFF_RECOVER};//エフェクトの種類
 //グローバル変数
 int stage = 1;
 int score = 0;
 int hisco = 10000;
 int bossIdx = 0;//ボスを代入した配列のインデックス
 int distance = 0;//ステージ終端までの距離
-
+int weaponLv = 1;//自機の武器のレベル()
 int noDamage = 0;//無敵状態
 
 //ここでゲームに用いる変数や配列を定義する
 struct OBJECT player; //自機用の構造体の変数
 struct OBJECT bullet[BULLET_MAX]; //自機用の構造体の変数
 struct OBJECT enemy[ENEMY_MAX];//敵機用の構造体の配列
+struct OBJECT effect[EFFECT_MAX];//エフェクト用の構造体の配列
+struct OBJECT item;//アイテム用の構造体変数
 int imgGalaxy, imgFloor, imgWallL, imgWallR;//背景画像
 int imgFighter, imgBullet;//自機と自機の弾の画像
 int imgEnemy[IMG_ENEMY_MAX];//敵機の画像
@@ -100,9 +108,11 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		{
 			bossIdx = setEnemy(WIDTH / 2, -120, 0, 1, ENE_BOSS, imgEnemy[ENE_BOSS], 200);//ボスの出現
 		}
+		if (distance % 800 == 1)setItem();//アイテムの出現
 		moveEnemy();//敵機の出現
 		movePlayer();//自機の操作
 		moveBullet();//弾の制御
+		drawEffect();//エフェクト
 		stageMap();//ステージマップ
 		drawParameter();//自機のシールドなどのパラメーターを表示
 
@@ -271,18 +281,28 @@ void setBullet(void)
 				damageEnemy(i, 1);//敵にダメージ
 			}
 		}
-		if (bullet[i].state == 0) //空いてる配列に弾をセットする
+		for (int n = 0;n < weaponLv; n++)
 		{
-			bullet[i].x = player.x;
-			bullet[i].y = player.y - 20;
-			bullet[i].vx = 0;
-			bullet[i].vy = -40;//y軸方向の速さ(一回の計算で移動するピクセル数)
-			bullet[i].state = 1;//弾を存在する状態にする
-			break;
+			int x = player.x - (weaponLv - 1) * 5 + n * 10;
+			int y = player.y - 20;
+			for (int i = 0; i < BULLET_MAX; i++)
+			{
+				if (bullet[i].state == 0) //空いてる配列に弾をセットする
+				{
+					bullet[i].x = player.x;
+					bullet[i].y = player.y - 20;
+					bullet[i].vx = 0;
+					bullet[i].vy = -40;//y軸方向の速さ(一回の計算で移動するピクセル数)
+					bullet[i].state = 1;//弾を存在する状態にする
+					break;
+				}
+			}
+
 		}
+		PlaySoundMem(seShot, DX_PLAYTYPE_BACK);//効果音
 
 	}
-	PlaySoundMem(seShot, DX_PLAYTYPE_BACK);//効果音
+	
 }
 void moveBullet(void)
 {
@@ -399,6 +419,7 @@ void damageEnemy(int n, int dmg)
 	if (enemy[n].shield <= 0)
 	{
 		enemy[n].state = 0;//シールド0以下で消す
+		setEffect(enemy[n].x, enemy[n].y, EFF_EXPLODE);//爆発演出
 	}
 
 }
@@ -418,5 +439,113 @@ void drawText(int x, int y,const char* txt, int val, int col, int siz)
 {
 	SetFontSize(siz);//フォントの大きさを指定
 	DrawFormatString(x + 1, y + 1, 0x00000, txt, val);//黒で文字列を表示
-	DrawFormatString(x, y, col, txt, val);//引数の色で文字列を表示
+	DrawFormatString(x, y, col, txt, val);//引数の色で文字列を表示 
+}
+void drawParameter(void)
+{
+	int x = 10, y = HEIGHT - 30;//表示位置
+	DrawBox(x, y, x + PLAYER_SHIELD_MAX * 30, y + 20, 0x000000, true);
+	for (int i = 0;i < player.shield; i++)//シールドのメーター
+	{
+		int r = 128 * (PLAYER_SHIELD_MAX - i) / PLAYER_SHIELD_MAX;//RGB値計算
+		int g = 255 * i / PLAYER_SHIELD_MAX;
+		int b = 160 + 96 * i / PLAYER_SHIELD_MAX;
+		DrawBox(x + 2 + i * 30, y + 2, x + 28 + i * 30, y + 18, GetColor(r, g, b), true);
+	}
+	drawText(x, y - 25, "SHIELD Lv %02d", player.shield, 0xffffff, 20);//シールド値
+	drawText(x, y - 50, "WEAPON Lv %02d", weaponLv, 0xffffff, 20);//シールド値
+	drawText(x, y - 75, "SPEED %02d", player.vx, 0xffffff, 20);//シールド値
+}
+void setEffect(int x,int y, int ptn)
+{
+	static int eff_num;
+	effect[eff_num].x = x;
+	effect[eff_num].y = y;
+	effect[eff_num].state = 1;
+	effect[eff_num].pattern = ptn;
+	effect[eff_num].timer = 0;
+	eff_num = (eff_num + 1) % EFFECT_MAX;
+	if (ptn == EFF_EXPLODE)PlaySoundMem(seExpl, DX_PLAYTYPE_BACK);//効果音
+}
+void drawEffect(void)
+{
+	int ix;
+	for (int i = 0;i < EFFECT_MAX; i++)
+	{
+		if (effect[i].state == 0)continue;
+		switch (effect[i].pattern)//エフェクトごとに処理をわける
+		{
+		case EFF_EXPLODE: //爆発演出
+			ix = effect[i].timer * 128;//画像の切り出し
+			DrawRectGraph(effect[i].x - 64, effect[i].y - 64, ix, 0, 128, 128, imgExplosion, true, false);
+			effect[i].timer++;
+			if (effect[i].timer == 7)effect[i].state = 0;
+			break;
+
+		case EFF_RECOVER://回復演出
+			if (effect[i].timer < 30)//加算による描画の重ね合わせ
+				SetDrawBlendMode(DX_BLENDMODE_ADD, effect[i].timer * 8);
+			else
+				SetDrawBlendMode(DX_BLENDMODE_ADD, (60 - effect[i].timer) * 8);
+			for (int i = 3;i < 8; i++)DrawCircle(player.x, player.y, (player.wid + player.hei) / i, 0x2040c0, true);
+			SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);//ブレンドモードを解除
+			effect[i].timer++;
+			if (effect[i].timer == 60)effect[i].state = 0;
+			//アイテムを組み込む時に記述
+			break;
+		}
+	}
+	
+}
+void setItem(void)
+{
+	item.x = (WIDTH / 4) * (1 + rand() % 3);
+	item.y = -16;
+	item.vx = 15;
+	item.vy = 1;
+	item.state = 1;
+	item.timer = 0;
+}
+//アイテム処理
+void moveItem(void)
+{
+	if (item.state == 0)return;
+	item.x += item.vx;
+	item.y += item.vy;
+	if (item.timer % 60 < 30)
+	{
+		item.vx -= 1;
+	}
+	else
+	{
+		item.vx += 1;
+	}
+	if (item.y > HEIGHT + 16)item.state = 0;
+	item.pattern = (item.timer / 120) % ITEM_TYEP;//現在、どのアイテムになっているか
+	item.timer++;
+	DrawRectGraph(item.x - 20, item.y - 16, item.pattern * 40, 0, 40, 32, imgItem, true, false);
+	//if(scene == OVER)
+	int dis = (item.x - player.x) * (item.x - player.x) + (item.y - player.y) * (item.y - player.y);
+	if (dis < 60 * 60)//アイテムと自機とのヒットチェック(円による当たり判定)
+	{
+		item.state = 0;
+		if (item.pattern == 0)//スピードアップ
+		{
+			if (player.vx < PLAYER_SPEED_MAX)
+			{
+				player.vx += 3;
+				player.vy += 3;
+			}
+		}
+		if (item.pattern == 1)//シールド回復
+		{
+			if (player.shield < PLAYER_SHIELD_MAX)player.shield++;
+			setEffect(player.x, player.y, EFF_RECOVER);//回復エフェクトを表示
+		}
+		if (item.pattern == 2)//武器レベルアップ
+		{
+			if (weaponLv < WEAPON_LV_MAX)weaponLv++;
+		}
+		PlaySoundMem(seItem, DX_PLAYTYPE_BACK);//効果音
+	}
 }
