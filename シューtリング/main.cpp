@@ -10,10 +10,16 @@ const int IMG_ENEMY_MAX = 5; //敵の画像の枚数(種類)
 const int BULLET_MAX = 100;//自機が発射する弾の最大数
 const int ENEMY_MAX = 100;//敵機の数の最大数
 const int STAGE_DISTANCE = FPS * 60;//ステージの長さ
-enum {ENE_BULLET,ENE_ZAKO1,ENE_ZAKO2,ENE_ZAKO3,ENE_ZAKO4};//敵機の種類
+const int   PLAYER_SHIELD_MAX = 8;//自機のシールドの最大数
+enum {ENE_BULLET,ENE_ZAKO1,ENE_ZAKO2,ENE_ZAKO3,ENE_BOSS};//敵機の種類
 //グローバル変数
-
+int stage = 1;
+int score = 0;
+int hisco = 10000;
+int bossIdx = 0;//ボスを代入した配列のインデックス
 int distance = 0;//ステージ終端までの距離
+
+int noDamage = 0;//無敵状態
 
 //ここでゲームに用いる変数や配列を定義する
 struct OBJECT player; //自機用の構造体の変数
@@ -69,7 +75,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		DrawFormatString(0, 20, GetColor(255, 255, 255), "Total Frames: %d", totalFrames);
 
 		scrollBG(1);//【仮】背景スクロール
-		if (distance % 60 == 1)distance--;//距離の計算
+		if (distance  > 0)distance--;//距離の計算
 		DrawFormatString(0, 0, 0xffff00, "distance=%d", distance);//【仮】確認用
 		if (distance % 60 == 1)//【仮】雑魚の出現
 		{
@@ -81,13 +87,25 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 			{
 				int vx = 0;
 				if (player.x < x - 50)vx = -3;
-				if (player.x > x - 50)vx = 3;
+				if (player.x > x + 50)vx = 3;
 				setEnemy(x, -100, vx, 5, ENE_ZAKO2, imgEnemy[ENE_ZAKO2], 3);
 			}
+			if (distance % 120 == 1)//【仮】雑魚機3の出現
+			{
+				int x = 100 + rand() % (WIDTH - 200);//出現位置	x座標
+				setEnemy(x, -100, 0, 40 + rand() % 20, ENE_ZAKO3, imgEnemy[ENE_ZAKO3], 5);
+			}
 		}
-		moveEnemy();
+		if (distance == 1)
+		{
+			bossIdx = setEnemy(WIDTH / 2, -120, 0, 1, ENE_BOSS, imgEnemy[ENE_BOSS], 200);//ボスの出現
+		}
+		moveEnemy();//敵機の出現
 		movePlayer();//自機の操作
 		moveBullet();//弾の制御
+		stageMap();//ステージマップ
+		drawParameter();//自機のシールドなどのパラメーターを表示
+
 
 		ScreenFlip();
 
@@ -119,6 +137,8 @@ void initVariable(void)
 	player.y = HEIGHT / 2;
 	player.vx = 15;
 	player.vy = 15;
+	player.shield = PLAYER_SHIELD_MAX;
+	GetGraphSize(imgFighter, &player.wid, &player.hei);//自機の画像の幅と高さの代入
 }
 
 //中心座標を指定して画像を表示する関数
@@ -132,6 +152,8 @@ void drawImage(int img, int x, int y)
 //自機を動かす関数
 void movePlayer(void)
 {
+	if (noDamage > 0) noDamage--;
+	if (noDamage % 4 < 2)drawImage(imgFighter, player.x, player.y);//自機の描画
 	static char oldSpcKey;
 	static int countSpcKey;
 	if (CheckHitKey(KEY_INPUT_W))//上キーで上に移動
@@ -205,7 +227,7 @@ void initGame(void)
 	//敵機の画像の読み込み
 	for (int i = 0; i < IMG_ENEMY_MAX; i++)
 	{
-		char file[] = "image/enemy.png";
+		char file[] = "image/enemy*.png";
 		file[11] = (char)('0' + i);
 		imgEnemy[i] = LoadGraph(file);
 	}
@@ -238,6 +260,17 @@ void setBullet(void)
 {
 	for (int i = 0;i < BULLET_MAX; i++)
 	{
+		if (noDamage == 0)//無敵状態でない時、自機とヒットチェック
+		{
+			int dx = abs(enemy[i].x - player.x);//中心座標間のピクセル数
+			int dy = abs(enemy[i].y - player.y);
+			if (dx < enemy[i].wid / 2 + player.wid / 2 && dy < enemy[i].hei / 2 + player.hei / 2);
+			{
+				if (player.shield > 0)player.shield--;
+				noDamage = FPS;//無敵状態をセット
+				damageEnemy(i, 1);//敵にダメージ
+			}
+		}
 		if (bullet[i].state == 0) //空いてる配列に弾をセットする
 		{
 			bullet[i].x = player.x;
@@ -276,11 +309,11 @@ int setEnemy(int x, int y, int vx, int vy, int ptn, int img, int sld)
 			enemy[i].y = y;
 			enemy[i].vx = vx;
 			enemy[i].vy = vy;
-			enemy[i].state = 0;
+			enemy[i].state = 1;
 			enemy[i].pattern = ptn;
 			enemy[i].image = img;
-//			enemy[i].shiled = sld * stage;//ステージが進むほど敵が固くなる
-// 			GetGraphSize(img,&enemy[i].wid,&enemy[i].hei);//画像の幅と高さを代入
+			enemy[i].shield = sld * stage;//ステージが進むほど敵が固くなる
+ 			GetGraphSize(img,&enemy[i].wid,&enemy[i].hei);//画像の幅と高さを代入
 			return i;
 		}
 	}
@@ -293,9 +326,97 @@ void moveEnemy(void)
 	for (int i = 0;i < ENEMY_MAX; i++)
 	{
 		if (enemy[i].state == 0)continue;//空いている配列なら処理しない
+		if (enemy[i].pattern == ENE_ZAKO3)
+		{
+			if (enemy[i].vy > 1)//減速
+			{
+				enemy[i].vy *= 0.9;
+			}
+
+			else if (enemy[i].vy > 0)//弾発射、飛び散る
+			{
+				setEnemy(enemy[i].x, enemy[i].vy, 0, 6, ENE_BULLET, imgEnemy[ENE_BULLET], 0);//弾
+				enemy[i].vx = 8;
+				enemy[i].vy = -4;
+			}
+		}
+		if (enemy[i].pattern == ENE_BOSS)//ボス機
+		{
+			if (enemy[i].y > HEIGHT - 120)enemy[i].vy = -2;
+			if (enemy[i].y < 120)//画面上端
+			{
+				if (enemy[i].y < 0)//弾発射
+				{
+					for (int bx = -2; bx <= 2; bx++)
+					{
+						for (int by = 0;by <= 3; by++)
+						{
+							if (bx == 0 && by == 0)continue;
+							{
+								setEnemy(enemy[i].x, enemy[i].y, bx * 2, by * 3, ENE_BULLET, imgEnemy[ENE_BULLET], 0);
+							}
+						}
+						enemy[i].vy = 2;
+					}
+				}
+
+
+			}
+		}
 		enemy[i].x += enemy[i].vx;//敵機の移動
 		enemy[i].y += enemy[i].vy;
 		drawImage(enemy[i].image, enemy[i].x, enemy[i].y);//敵機の描画
 		//画面外に出たか
+		if (enemy[i].x < -200 || WIDTH + 200 < enemy[i].x || enemy[i].y < -200 || HEIGHT + 200 < enemy[i].y) enemy[i].state = 0;
+
+		//あたり判定のアルゴリズム
+		if (enemy[i].shield > 0)//ヒットチェックを行う敵機(弾以外)
+		{
+			for (int j = 0; j < BULLET_MAX; j++)//自機の弾とヒットチェック
+			{
+				if (bullet[i].state == 0)continue;
+				int dx = abs((int)(enemy[i].x - bullet[j].x));//中心座標のピクセル数
+				int dy = abs((int)(enemy[i].y - bullet[j].y));//中心座標のピクセル数
+				if (dx < enemy[i].wid / 2 && dy < enemy[i].hei / 2);//接触してるか
+				{
+					bullet[j].state = 0;//弾を消す
+					damageEnemy(i, 1);//敵のダメージ
+				}
+			}
+		}
+			
 	}
+}
+//敵機のシールドを減らす(ダメージを与える)
+void damageEnemy(int n, int dmg)
+{
+	SetDrawBlendMode(DX_BLENDMODE_ADD, 192);//加算による描画の重ね合わせ
+	DrawCircle(enemy[n].x, enemy[n].y, (enemy[n].wid + enemy[n].hei) / 4, 0xff0000, true);
+	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);//ブレンドモードの解除
+	score += 100;//スコアの加算
+	if (score > hisco)hisco = score;//ハイスコアの更新
+	enemy[n].shield -= dmg;//シールドを減らす
+	if (enemy[n].shield <= 0)
+	{
+		enemy[n].state = 0;//シールド0以下で消す
+	}
+
+}
+void stageMap(void)
+{
+	int mx = WIDTH - 30, my = 60;//マップの表示
+	int wi = 20, he = HEIGHT - 120;//マップの高さ
+	int pos = (HEIGHT - 140) * distance / STAGE_DISTANCE;//自機の飛行している位置
+	SetDrawBlendMode(DX_BLENDMODE_SUB, 128);//減算による描画の重ね合わせ
+	DrawBox(mx, my, mx + wi, my + he, 0xffffff, true);
+	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);//ブレンドモードを解除
+	DrawBox(mx - 1, my - 1, mx + wi + 1, my + he + 1, 0xffffff, false);//枠線
+	DrawBox(mx, my + pos, mx + wi, my + pos + 20, 0x0080ff, true);//自機の位置
+
+}
+void drawText(int x, int y,const char* txt, int val, int col, int siz)
+{
+	SetFontSize(siz);//フォントの大きさを指定
+	DrawFormatString(x + 1, y + 1, 0x00000, txt, val);//黒で文字列を表示
+	DrawFormatString(x, y, col, txt, val);//引数の色で文字列を表示
 }

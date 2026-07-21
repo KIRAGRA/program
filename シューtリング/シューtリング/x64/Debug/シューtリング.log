@@ -1,2 +1,2 @@
-﻿  main.cpp
-C:\Users\nishimurakira\Documents\GitHub\program\シューtリング\main.cpp(273,1): error C4716: 'setEnemy': 値を返さなければいけません
+﻿main.obj : error LNK2019: 未解決の外部シンボル "void __cdecl drawParameter(void)" (?drawParameter@@YAXXZ) が関数 WinMain で参照されました
+C:\Users\nishimurakira\Documents\GitHub\program\シューtリング\x64\Debug\シューtリング.exe : fatal error LNK1120: 1 件の未解決の外部参照
