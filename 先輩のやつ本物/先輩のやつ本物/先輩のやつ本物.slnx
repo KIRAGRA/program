@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="先輩のやつ本物/先輩のやつ本物.vcxproj" />
+</Solution>
