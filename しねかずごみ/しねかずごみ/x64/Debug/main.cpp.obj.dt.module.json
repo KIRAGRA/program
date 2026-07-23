@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "しねかずごみ\\x64\\Debug\\main.obj",
+            "outputs": [
+                "しねかずごみ\\x64\\Debug\\main.cpp.obj.dt.module.json",
+                "しねかずごみ\\x64\\Debug\\main.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

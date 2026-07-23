@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\enemy.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\character.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

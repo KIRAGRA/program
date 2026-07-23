@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\scenemain.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\scenemain.h",
+            "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\player.h",
+            "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\character.h",
+            "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\enemy.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
