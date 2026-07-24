@@ -6,8 +6,10 @@ public:
 	Enemy();
 	virtual~Enemy();
 
-	void Init();
-	void Update();
-	void Draw();
+	virtual void Init() override;
+	virtual void Update() override;
+	virtual void Draw() override;
+
+
 };
 

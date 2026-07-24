@@ -10,8 +10,4 @@ namespace Pad
 	//話した瞬間を取得
 	bool IsRelease(int key);
 }
-class Pad
-{
-
-};
 

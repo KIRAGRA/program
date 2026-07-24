@@ -42,7 +42,7 @@ namespace Pad
 		bool isNow = (nowPad & key);//現在のフレーム
 		bool isLast = (lastPad & key);//前のフレーム
 
-		if (isNow && !isLast)
+		if (!isNow && !isLast)
 		{
 			return true;
 		}

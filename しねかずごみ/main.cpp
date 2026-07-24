@@ -36,9 +36,10 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		DrawFormatString(0, 0, GetColor(255, 255, 255), "FPS: %d", currentFps);
 		DrawFormatString(0, 20, GetColor(255, 255, 255), "Total Frames: %d", totalFrames);
 
+		Pad::Update();
 		m_pScene->Update();
 		m_pScene->Draw();
-		Pad::Update();
+		
 
 		ScreenFlip();
 
