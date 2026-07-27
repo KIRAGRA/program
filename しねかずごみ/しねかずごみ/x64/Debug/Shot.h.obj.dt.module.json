@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "しねかずごみ\\x64\\Debug\\Shot.obj",
+            "outputs": [
+                "しねかずごみ\\x64\\Debug\\Shot.h.obj.dt.module.json",
+                "しねかずごみ\\x64\\Debug\\Shot.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

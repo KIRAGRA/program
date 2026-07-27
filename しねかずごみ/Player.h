@@ -1,6 +1,8 @@
 #pragma once
 #include "Character.h"
 
+class Shot;
+
 class Player : public Character
 {
 public:
@@ -11,8 +13,13 @@ public:
 	virtual void Update() override;
 	virtual void Draw() override;
 
+public:
+	Shot* CreateShot();
+
 private:
 	void Move();
+
+	void Jump();
 
 };
 

@@ -1,8 +1,12 @@
-﻿  Enemy.cpp
+﻿  SceneMain.cpp
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\SceneMain.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 C:\Users\kira\Documents\GitHub\program\しねかずごみ\Character.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
   
 C:\Users\kira\Documents\GitHub\program\しねかずごみ\Vec2.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Shot.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
   
   しねかずごみ.vcxproj -> C:\Users\kira\Documents\GitHub\program\しねかずごみ\x64\Debug\しねかずごみ.exe

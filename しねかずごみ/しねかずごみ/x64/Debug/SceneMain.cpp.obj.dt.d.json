@@ -39,7 +39,8 @@
             "c:\\program files\\microsoft visual studio\\18\\insiders\\vc\\tools\\msvc\\14.51.36231\\include\\cstddef",
             "c:\\program files\\microsoft visual studio\\18\\insiders\\vc\\tools\\msvc\\14.51.36231\\include\\cstdint",
             "c:\\program files\\microsoft visual studio\\18\\insiders\\vc\\tools\\msvc\\14.51.36231\\include\\stdint.h",
-            "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\enemy.h"
+            "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\enemy.h",
+            "c:\\users\\kira\\documents\\github\\program\\しねかずごみ\\shot.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
