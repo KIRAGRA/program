@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GOAT.vcxproj" Id="81da3fa0-0b38-492d-968b-cd8390709ec9" />
+</Solution>

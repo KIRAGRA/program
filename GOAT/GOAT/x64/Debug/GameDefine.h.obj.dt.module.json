@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "GOAT\\x64\\Debug\\GameDefine.obj",
+            "outputs": [
+                "GOAT\\x64\\Debug\\GameDefine.h.obj.dt.module.json",
+                "GOAT\\x64\\Debug\\GameDefine.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
