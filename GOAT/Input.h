@@ -6,15 +6,13 @@ public:
 	Input();
 	virtual~Input();
 
-
-
 	void Init();
 	void Update();
 	void Draw();
 
 	
 
-private:
+public:
 	int  m_mousePosX;
 	int  m_mousePosY;
 	//押されているか
@@ -27,9 +25,7 @@ private:
 	int m_nowKey;
 	int m_lastKey;
 
-	int m_ban = 17;
-	//レティクル
-	//int m_aimHandle;
+	
 
 };
 

@@ -1,4 +1,51 @@
-﻿  SceneMain.cpp
+﻿  Character.cpp
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Character.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Character.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Character.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Vec2.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Character.cpp' をコンパイルしています)
+  
+  Enemy.cpp
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Character.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Vec2.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
+  
+  main.cpp
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Pad.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+  
+  Pad.cpp
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Pad.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Pad.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Pad.cpp' をコンパイルしています)
+  
+  Player.cpp
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Player.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Character.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Player.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Vec2.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Player.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Pad.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Player.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Shot.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Player.cpp' をコンパイルしています)
+  
+  Rect.cpp
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Vec2.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Rect.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Rect.h(21,8): error C2535: 'float Rect::GetCenter(void) const': メンバー関数は、既に定義または宣言されています。
+  (ソース ファイル 'Rect.cpp' をコンパイルしています)
+      C:\Users\kira\Documents\GitHub\program\しねかずごみ\Rect.h(20,8):
+      'Rect::GetCenter' の宣言を確認してください
+  
+  SceneMain.cpp
 C:\Users\kira\Documents\GitHub\program\しねかずごみ\SceneMain.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 C:\Users\kira\Documents\GitHub\program\しねかずごみ\Character.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
   (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
@@ -9,4 +56,14 @@ C:\Users\kira\Documents\GitHub\program\しねかずごみ\Vec2.h(1,1): warning C
 C:\Users\kira\Documents\GitHub\program\しねかずごみ\Shot.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
   (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
   
-  しねかずごみ.vcxproj -> C:\Users\kira\Documents\GitHub\program\しねかずごみ\x64\Debug\しねかずごみ.exe
+  Shot.cpp
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Shot.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Shot.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Vec2.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Shot.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Shot.cpp(5,23): warning C4244: '初期化中': 'float' から 'const int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Shot.cpp(32,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\しねかずごみ\Shot.cpp(32,17): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  コードを生成中...

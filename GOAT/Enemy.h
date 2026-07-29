@@ -1,4 +1,5 @@
 #pragma once
+#include "Vec2.h"
 class Enemy
 {
 public:
@@ -11,10 +12,30 @@ public:
 	void Update();
 	void Draw();
 
-private:
-	int m_enemyPosX;
-	int m_enemyPosY;
+	
+	void CheckHit();
+protected:
+	Vec2 m_pos;
 
-	int m_enemyHandle;
+
+private:
+	//移動処理
+	void Move();
+
+	void RandamSpawn();
+	//
+
+
+	//出現時間
+	int m_time;
+
+	int m_halfSize;
+
+	bool m_isHit;
+
+
+	 
+
+
 };
 

@@ -1,5 +1,7 @@
 #pragma once
 class Input;
+class Enemy;
+
 class SceneMain
 {
 public:
@@ -13,6 +15,7 @@ public:
 private:
 
 	Input* m_pInput;
+	Enemy* m_pEnemy;
 
 };
 

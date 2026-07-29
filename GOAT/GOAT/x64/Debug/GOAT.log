@@ -1,3 +1,33 @@
 ﻿  Enemy.cpp
-C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(4,16): error C2737: '`anonymous-namespace'::EnemyTime': constexpr オブジェクトを初期化する必要があります
-C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(6,16): error C2737: '`anonymous-namespace'::EnemyHp': constexpr オブジェクトを初期化する必要があります
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\GOAT\Input.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(15,28): warning C4244: '初期化中': 'float' から 'const int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(62,28): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(62,19): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(66,28): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(66,19): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(91,15): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(92,15): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(101,22): warning C4244: '初期化中': 'float' から 'int' への変換です。データが失われる可能性があります。
+  Input.cpp
+C:\Users\kira\Documents\GitHub\program\GOAT\Input.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\kira\Documents\GitHub\program\GOAT\Input.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'Input.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\GOAT\Input.cpp(7,13): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Input.cpp(8,13): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+  SceneMain.cpp
+C:\Users\kira\Documents\GitHub\program\GOAT\SceneMain.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\kira\Documents\GitHub\program\GOAT\Input.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
+  
+  コードを生成中...
+  GOAT.vcxproj -> C:\Users\kira\Documents\GitHub\program\GOAT\x64\Debug\GOAT.exe
