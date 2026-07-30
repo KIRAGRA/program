@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Vec2.h"
 class Input
 {
 public:
@@ -10,7 +10,7 @@ public:
 	void Update();
 	void Draw();
 
-	
+	Vec2 GetMousePos()const { return{ static_cast<float>(m_mousePosX), static_cast<float>(m_mousePosY) }; };
 
 public:
 	int  m_mousePosX;

@@ -15,9 +15,16 @@ namespace
 	constexpr int kSpawnFrame = 250.0f;
 
 	constexpr int kHalfSize = 50;
+
+	constexpr int kEnemyHp = 1;
 }
-Enemy::Enemy():
-	m_time(0)
+Enemy::Enemy() :
+	m_time(0),
+	m_halfSize(0),
+	m_isHit(0),
+	m_firstPos({0,0}),
+	m_enemyHp(0)
+
 {
 }
 
@@ -25,14 +32,14 @@ Enemy::~Enemy()
 {
 }
 
-void Enemy::Init()
+void Enemy::Init(Vec2 _pos)
 {
-	m_pos.x = kFirstPosX;
-	m_pos.y = kFirstPosY;
+
+	m_enemyHp = kEnemyHp;
 	m_isHit = false;
 	m_halfSize = kHalfSize;
-
-
+	m_pos = _pos;
+	m_firstPos = _pos;
 }
 
 void Enemy::Update()
@@ -41,7 +48,7 @@ void Enemy::Update()
 	if (m_time > kSpawnFrame)
 	{
 		//位置の初期化
-		m_pos.x = kFirstPosX;
+		m_pos = m_firstPos;
 
 		//タイマーのリセット
 		m_time = 0;
@@ -49,23 +56,30 @@ void Enemy::Update()
 	//タイマーの更新
 	m_time++;
 
+	if (m_enemyHp < 0)
+	{
+		//DeleteObject();
+	}
 
 	
 	//移動処理
 	Move();
+	
 }
 
 void Enemy::Draw()
 {
-	if (m_isHit)
+	if (m_isHit == true)
 	{
+		// 当たっているときの処理
 		DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), true);
+		printfDx("HIT\n");
+		m_isHit = false;
 	}
-	else
+	else if(m_isHit == false)
 	{
+		// 当たっていないときの処理
 		DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 255, 255), true);
-
-
 	}
 
 
@@ -76,14 +90,12 @@ void Enemy::Move()
 	m_pos.x += kSpeed;
 	
 }
-void Enemy::RandamSpawn()
-{
 
-}
+
 
 void Enemy::CheckHit()
 {
-	//現在のマウスの位置を取得
+	/*//現在のマウスの位置を取得
 	int _mousePosX;
 	int _mousePosY;
 	GetMousePoint(&_mousePosX, &_mousePosY);
@@ -95,7 +107,7 @@ void Enemy::CheckHit()
 	//マウスの位置からとエネミーの位置のベクトルを作成
 	Vec2 mouseToEnemy;
 	mouseToEnemy.x = m_pos.x - mousePos.x;
-	mouseToEnemy.y = m_pos.y - mousePos.y;
+	mouseToEnemy.y = m_pos.y  - mousePos.y;
 
 	//マウスからenemyへの距離
 	int mouseToEnemyLen = mouseToEnemy.sqrLength();
@@ -108,5 +120,5 @@ void Enemy::CheckHit()
 	else
 	{
 		m_isHit = false;
-	}
+	}*/
 }

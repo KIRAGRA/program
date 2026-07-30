@@ -35,7 +35,7 @@ void Input::Update()
 
 void Input::Draw()
 {
-	//DrawCircle(m_mousePosX, m_mousePosY, 3, GetColor(255, 0, 255), true);
+	
 }
 
 
