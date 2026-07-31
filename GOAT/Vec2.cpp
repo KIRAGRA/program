@@ -29,7 +29,9 @@ float Vec2::sqrLength()
 	float ans;
 	float len2;
 
-	len2 = (x * x) + (y*y);
+	len2 = (x * x) + (y * y);
+
+
 
 	return len2;
 }

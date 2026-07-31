@@ -1,19 +1,35 @@
-﻿  Enemy2.cpp
-C:\Users\kira\Documents\GitHub\program\GOAT\Enemy2.h(20,37): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
-  
+﻿  Enemy.cpp
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
 C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
+  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
   
 C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(18,37): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
+  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(20,34): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
+  
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(21,35): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
   
 C:\Users\kira\Documents\GitHub\program\GOAT\Input.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
+  (ソース ファイル 'Enemy.cpp' をコンパイルしています)
   
-C:\Users\kira\Documents\GitHub\program\GOAT\Enemy2.cpp(16,28): warning C4244: '初期化中': 'float' から 'const int' への変換です。データが失われる可能性があります。
-C:\Users\kira\Documents\GitHub\program\GOAT\Enemy2.cpp(52,28): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\kira\Documents\GitHub\program\GOAT\Enemy2.cpp(52,19): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\kira\Documents\GitHub\program\GOAT\Enemy2.cpp(57,28): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\kira\Documents\GitHub\program\GOAT\Enemy2.cpp(57,19): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(15,28): warning C4244: '初期化中': 'float' から 'const int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(34,9): warning C4244: '初期化中': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(35,10): warning C4244: '初期化中': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(54,12): warning C4244: '=': 'const float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(55,13): warning C4244: '=': 'const float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(92,31): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(92,23): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(100,27): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(100,18): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(101,33): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(101,24): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(122,28): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(122,21): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(122,16): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(122,10): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(134,13): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.cpp(135,12): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
   GOAT.vcxproj -> C:\Users\kira\Documents\GitHub\program\GOAT\x64\Debug\GOAT.exe

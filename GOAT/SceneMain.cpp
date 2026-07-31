@@ -4,10 +4,17 @@
 #include "Enemy2.h"
 #include "Vec2.h"
 #include <DxLib.h>
+namespace
+{
+	constexpr int kScoreUp = 100;
+}
 SceneMain::SceneMain():
 	m_pInput(nullptr),
 	m_pEnemy(nullptr),
-	m_pEnemy2(nullptr)
+	m_pEnemy2(nullptr),
+	m_score(0)
+	
+	
 {
 }
 
@@ -45,6 +52,8 @@ void SceneMain::Init()
 
 void SceneMain::Update()
 {
+	
+
 	//左クリックしているかを判定
 	bool IsLeftClick = m_pInput->IsTrigger(MOUSE_INPUT_LEFT);
 
@@ -57,9 +66,10 @@ void SceneMain::Update()
 	{
 		if (IsLeftClick)
 		{
-			bool isHit = ColCheck(m_pEnemy[i]->GetPos(), m_pEnemy[i]->GetHalfSize());
+			bool isHit = BoxColCheck(m_pEnemy[i]->GetPos(), m_pEnemy[i]->GetWidth(), m_pEnemy[i]->GetHeight());
 			//m_pEnemy[i]->CheckHit();
 			m_pEnemy[i]->SetIsHit(isHit);
+			
 		}
 		m_pEnemy[i]->Update();
 	}
@@ -71,6 +81,12 @@ void SceneMain::Update()
 			bool isHit = ColCheck(m_pEnemy2[i]->GetPos(), m_pEnemy2[i]->GetHalfSize());
 			//m_pEnemy2[i]->CheckHit();
 			m_pEnemy2[i]->SetIsHit(isHit);
+			if (isHit == true)
+			{
+				m_score += kScoreUp;
+			}
+		
+		
 		}
 		m_pEnemy2[i]->Update();
 	}
@@ -87,7 +103,13 @@ void SceneMain::Draw()
 	for (int i = 0; i < 1;i++)
 	{
 		m_pEnemy2[i]->Draw();
+
+
 	}
+ DrawFormatString(100, 100, GetColor(255, 255, 255), "SCORE: %d", m_score);
+	
+
+
 }
 
 bool SceneMain::ColCheck(Vec2 _enePos, float _halfSize)
@@ -120,4 +142,33 @@ bool SceneMain::ColCheck(Vec2 _enePos, float _halfSize)
 	{
 		return false;
 	}
+}
+
+bool SceneMain::BoxColCheck(Vec2 _enePos, float _width,float _height)
+{
+	Vec2 mousePos = m_pInput->GetMousePos();
+
+	float Left = _enePos.x - (_width / 2);
+	float Right = _enePos.x + (_width / 2);
+	float Bottom = _enePos.y + (_height / 2);
+	float Top = _enePos.y - (_height / 2);
+
+	if (mousePos.x < Left)
+	{
+		return false;
+	}
+	if (mousePos.x > Right)
+	{
+		return false;
+	}
+	if (mousePos.y > Bottom)
+	{
+		return false;
+	}
+	if (mousePos.y < Top)
+	{
+		return false;
+	}
+	return true;
+
 }

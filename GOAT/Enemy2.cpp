@@ -17,6 +17,11 @@ namespace
 
 	constexpr int kHalfSize = 50;
 
+	constexpr int kChipWidth = 16;
+	constexpr int kChipHeight = 16;
+
+	
+	
 
 }
 
@@ -24,6 +29,8 @@ Enemy2::Enemy2():
 	m_halfSize(0),
 	m_isHit(0),
 	m_firstPos({ 0,0 })
+	
+
 {
 	
 }
@@ -50,12 +57,15 @@ void Enemy2::Draw()
 	if (m_isHit)
 	{
 		DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), true);
+		//DrawBox(m_pos.x, m_pos.y, 10, 10, GetColor(255, 255, 255), true);
 		m_isHit = false;
 	}
 	else
 	{
 		DrawCircle(m_pos.x, m_pos.y,  m_halfSize, GetColor(255, 255, 255), true);
+		//DrawBox(m_pos.x, m_pos.y, 10, 10, GetColor(255, 255, 255), true);
 	}
+
 
 }
 

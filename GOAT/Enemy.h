@@ -17,6 +17,9 @@ public:
 	Vec2 GetPos() const { return m_pos; };
 	float GetHalfSize() const { return m_halfSize; };
 
+	float GetWidth() const { return m_width;};
+	float GetHeight() const { return m_height;};
+
 protected:
 	Vec2 m_pos;
 
@@ -25,9 +28,15 @@ private:
 	//移動処理
 	void Move();
 
+	void DrawBoxCenter(Vec2 _enePos, float _width, float _height, unsigned int Color);
+	
+	void DrawGraphCenter(Vec2 _enePos, int _graphHandle);
+
 	int m_enemyHp;
 
 	//
+
+	int m_enemyHandle;
 
 	Vec2 m_firstPos;
 
@@ -40,7 +49,9 @@ private:
 	bool m_isHit;
 
 
-	 
+	int m_width;
+	int m_height;
+
 
 
 };

@@ -22,6 +22,7 @@ public:
 protected:
 	Vec2 m_pos;
 
+	
 
 	private:
 
@@ -30,7 +31,7 @@ protected:
 	//enemyサイズ
 	int m_halfSize;
 
-	
+	int m_score;
 
 	bool m_isHit;
 

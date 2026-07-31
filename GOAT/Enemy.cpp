@@ -17,14 +17,22 @@ namespace
 	constexpr int kHalfSize = 50;
 
 	constexpr int kEnemyHp = 1;
+
+
+	constexpr float kWidth = 200;
+	constexpr float kHeight = 200;
+
+
 }
 Enemy::Enemy() :
 	m_time(0),
 	m_halfSize(0),
 	m_isHit(0),
 	m_firstPos({0,0}),
-	m_enemyHp(0)
-
+	m_enemyHp(0),
+	m_enemyHandle(-1),
+	m_width(0.0f),
+	m_height(0.0f)
 {
 }
 
@@ -35,11 +43,17 @@ Enemy::~Enemy()
 void Enemy::Init(Vec2 _pos)
 {
 
+	m_enemyHandle = LoadGraph("data/car.png");
+
 	m_enemyHp = kEnemyHp;
 	m_isHit = false;
 	m_halfSize = kHalfSize;
 	m_pos = _pos;
 	m_firstPos = _pos;
+
+	m_width = kWidth;
+	m_height = kHeight;
+
 }
 
 void Enemy::Update()
@@ -72,15 +86,22 @@ void Enemy::Draw()
 	if (m_isHit == true)
 	{
 		// 当たっているときの処理
-		DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), true);
+		//DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), true);
+		//DrawGraph(m_pos.x,m_pos.y, m_enemyHandle, true);
+		//DrawGraphCenter(m_pos, m_enemyHandle);
+		DrawBoxCenter(m_pos,m_width,m_height,GetColor(255,0,0));
 		printfDx("HIT\n");
 		m_isHit = false;
 	}
 	else if(m_isHit == false)
 	{
 		// 当たっていないときの処理
-		DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 255, 255), true);
+		//DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 255, 255), true);
+		DrawGraph(m_pos.x, m_pos.y, m_enemyHandle, true);
+		DrawBoxCenter(m_pos, m_width, m_height, GetColor(255, 255, 255));
+		//DrawGraphCenter(m_pos, m_enemyHandle);
 	}
+	
 
 
 }
@@ -91,34 +112,29 @@ void Enemy::Move()
 	
 }
 
-
-
-void Enemy::CheckHit()
+void Enemy::DrawBoxCenter(Vec2 _enePos, float _width, float _height, unsigned int Color)
 {
-	/*//現在のマウスの位置を取得
-	int _mousePosX;
-	int _mousePosY;
-	GetMousePoint(&_mousePosX, &_mousePosY);
-	Vec2 mousePos;
-	mousePos.x = _mousePosX;
-	mousePos.y = _mousePosY;
+	float Left = _enePos.x - (_width / 2);
+	float Right = _enePos.x + (_width / 2);
+	float Bottom = _enePos.y + (_height / 2);
+	float Top = _enePos.y - (_height / 2);
 
-	//マウスが当たっているか
-	//マウスの位置からとエネミーの位置のベクトルを作成
-	Vec2 mouseToEnemy;
-	mouseToEnemy.x = m_pos.x - mousePos.x;
-	mouseToEnemy.y = m_pos.y  - mousePos.y;
+	DrawBox(Left, Top, Right, Bottom, Color, true);
 
-	//マウスからenemyへの距離
-	int mouseToEnemyLen = mouseToEnemy.sqrLength();
 
-	//マウスからenemyへの距離がenemyの半径より小さかったら当たっている
-	if (mouseToEnemyLen < (m_halfSize*m_halfSize))
-	{
-		m_isHit = true;
-	}
-	else
-	{
-		m_isHit = false;
-	}*/
 }
+
+void Enemy::DrawGraphCenter(Vec2 _enePos, int _graphHandle)
+{
+	int width, height;
+
+	GetGraphSize(_graphHandle, &width, &height);
+
+
+	float Left = width;
+	float Top = height;
+
+
+}
+
+
