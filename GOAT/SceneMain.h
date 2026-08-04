@@ -21,6 +21,7 @@ public:
 	bool BoxColCheck(Vec2 _enePos, float _widht,float _height);
 
 
+
 private:
 
 	int m_score;

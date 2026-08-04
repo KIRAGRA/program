@@ -52,6 +52,7 @@ private:
 	int m_width;
 	int m_height;
 
+	bool isArrived;
 
 
 };

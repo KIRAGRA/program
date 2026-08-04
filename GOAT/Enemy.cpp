@@ -85,21 +85,14 @@ void Enemy::Draw()
 {
 	if (m_isHit == true)
 	{
-		// 当たっているときの処理
-		//DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), true);
-		//DrawGraph(m_pos.x,m_pos.y, m_enemyHandle, true);
-		//DrawGraphCenter(m_pos, m_enemyHandle);
-		DrawBoxCenter(m_pos,m_width,m_height,GetColor(255,0,0));
 		printfDx("HIT\n");
 		m_isHit = false;
 	}
 	else if(m_isHit == false)
 	{
 		// 当たっていないときの処理
-		//DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 255, 255), true);
-		DrawGraph(m_pos.x, m_pos.y, m_enemyHandle, true);
-		DrawBoxCenter(m_pos, m_width, m_height, GetColor(255, 255, 255));
-		//DrawGraphCenter(m_pos, m_enemyHandle);
+		
+		DrawGraphCenter(m_pos, m_enemyHandle);
 	}
 	
 
@@ -130,10 +123,7 @@ void Enemy::DrawGraphCenter(Vec2 _enePos, int _graphHandle)
 
 	GetGraphSize(_graphHandle, &width, &height);
 
-
-	float Left = width;
-	float Top = height;
-
+	DrawGraph(_enePos.x - (width * 0.5f), _enePos.y - (height * 0.5f), _graphHandle, true);
 
 }
 

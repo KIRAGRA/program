@@ -172,3 +172,4 @@ bool SceneMain::BoxColCheck(Vec2 _enePos, float _width,float _height)
 	return true;
 
 }
+

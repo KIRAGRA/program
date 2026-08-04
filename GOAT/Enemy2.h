@@ -19,6 +19,8 @@ public:
 	Vec2 GetPos() const { return m_pos; };
 	float GetHalfSize() const { return m_halfSize; };
 
+	void DrawGraphCenter(Vec2 _enePos, int _graphHandle);
+
 protected:
 	Vec2 m_pos;
 
@@ -35,7 +37,7 @@ protected:
 
 	bool m_isHit;
 
-	
+	int m_enemyHandle;
 
 };
 
