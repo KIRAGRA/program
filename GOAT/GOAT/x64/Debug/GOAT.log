@@ -1,23 +1,28 @@
-﻿  Enemy2.cpp
-D:\GitHub\program\GOAT\Enemy2.h(20,37): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
+﻿  SceneMain.cpp
+C:\Users\kira\Documents\GitHub\program\GOAT\SceneMain.cpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\kira\Documents\GitHub\program\GOAT\Input.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
   
-D:\GitHub\program\GOAT\Enemy.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
   
-D:\GitHub\program\GOAT\Enemy.h(18,37): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(18,37): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
   
-D:\GitHub\program\GOAT\Enemy.h(20,34): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(20,34): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
   
-D:\GitHub\program\GOAT\Enemy.h(21,35): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy.h(21,35): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
   
-D:\GitHub\program\GOAT\Input.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
-  (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
+C:\Users\kira\Documents\GitHub\program\GOAT\Enemy2.h(20,37): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'SceneMain.cpp' をコンパイルしています)
   
-D:\GitHub\program\GOAT\Enemy2.cpp(16,28): warning C4244: '初期化中': 'float' から 'const int' への変換です。データが失われる可能性があります。
-D:\GitHub\program\GOAT\Enemy2.cpp(83,50): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-D:\GitHub\program\GOAT\Enemy2.cpp(83,22): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-  GOAT.vcxproj -> D:\GitHub\program\GOAT\x64\Debug\GOAT.exe
+C:\Users\kira\Documents\GitHub\program\GOAT\SceneMain.cpp(26,2): warning C4156: 'delete' の配列でない形式を使った配列の削除は、定義されていません。
+C:\Users\kira\Documents\GitHub\program\GOAT\SceneMain.cpp(26,2): warning C4154: 配列の delete が定義されていません。配列は、ポインターに変換されます。
+C:\Users\kira\Documents\GitHub\program\GOAT\SceneMain.cpp(27,2): warning C4156: 'delete' の配列でない形式を使った配列の削除は、定義されていません。
+C:\Users\kira\Documents\GitHub\program\GOAT\SceneMain.cpp(27,2): warning C4154: 配列の delete が定義されていません。配列は、ポインターに変換されます。
+C:\Users\kira\Documents\GitHub\program\GOAT\SceneMain.cpp(49,53): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\SceneMain.cpp(49,98): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\kira\Documents\GitHub\program\GOAT\SceneMain.cpp(140,22): warning C4244: '初期化中': 'float' から 'int' への変換です。データが失われる可能性があります。
+  GOAT.vcxproj -> C:\Users\kira\Documents\GitHub\program\GOAT\x64\Debug\GOAT.exe

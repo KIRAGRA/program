@@ -123,7 +123,7 @@ void Enemy::DrawGraphCenter(Vec2 _enePos, int _graphHandle)
 
 	GetGraphSize(_graphHandle, &width, &height);
 
-	DrawGraph(_enePos.x - (width * 0.5f), _enePos.y - (height * 0.5f), _graphHandle, true);
+	DrawTurnGraph(_enePos.x - (width * 0.5f), _enePos.y - (height * 0.5f), _graphHandle, true);
 
 }
 

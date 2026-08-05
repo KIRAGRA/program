@@ -9,7 +9,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 {
 	ChangeWindowMode(1);          // windowモードで起動
 	SetGraphMode(WIDTH, HEIGHT, 32);  // ウィンドウサイズを16：9に
-	SetMainWindowText("DxLibTemplate"); // ウィンドウのタイトル表示を変更
+	SetMainWindowText("Goat the Road"); // ウィンドウのタイトル表示を変更
 
 	if (DxLib_Init() == -1)       // ＤＸライブラリ初期化処理
 	{

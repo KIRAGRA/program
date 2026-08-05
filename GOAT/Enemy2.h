@@ -39,5 +39,7 @@ protected:
 
 	int m_enemyHandle;
 
+	int m_time;
+
 };
 

@@ -7,11 +7,16 @@ public:
 
 	void Init();
 	void Update();
-	void End();
+	void Draw();
 
 private:
 
 	int m_bulletAttack;
+
+
+	int m_playerHandle;
+
+	int m_animFrame;
 
 };
 

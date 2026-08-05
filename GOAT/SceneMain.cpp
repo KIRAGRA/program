@@ -3,6 +3,7 @@
 #include "Enemy.h"
 #include "Enemy2.h"
 #include "Vec2.h"
+#include "Player.h"
 #include <DxLib.h>
 namespace
 {
@@ -12,6 +13,7 @@ SceneMain::SceneMain():
 	m_pInput(nullptr),
 	m_pEnemy(nullptr),
 	m_pEnemy2(nullptr),
+	m_pPlayer(nullptr),
 	m_score(0)
 	
 	
@@ -23,12 +25,15 @@ SceneMain::~SceneMain()
 	delete m_pInput;
 	delete m_pEnemy;
 	delete m_pEnemy2;
+	delete m_pPlayer;
 }
 
 void SceneMain::Init()
 {
 	m_pInput = new Input;
-	
+	m_pInput->Init();
+	m_pPlayer = new Player;
+	m_pPlayer->Init();
 	for (int i = 0; i < 1; i++)
 	{
 		float idx = static_cast<float>(i);
@@ -41,10 +46,10 @@ void SceneMain::Init()
 	{
 		float idx = static_cast<float>(i);
 		m_pEnemy2[i] = new Enemy2;
-		m_pEnemy2[i]->Init({ 200 + idx *100, 200 });
+		m_pEnemy2[i]->Init({ static_cast<float>(GetRand(200 + idx * 100)), static_cast<float>( GetRand(200 + idx * 100)) });
 
 	}
-	m_pInput->Init();
+
 	
 	
 
@@ -60,7 +65,7 @@ void SceneMain::Update()
 	//左クリックしたときにあたっているかを判定する
 
 
-
+	m_pPlayer->Update();
 	m_pInput->Update();
 	for (int i = 0; i < 1;i++)
 	{
@@ -95,6 +100,7 @@ void SceneMain::Update()
 void SceneMain::Draw()
 {
 	m_pInput->Draw();
+	m_pPlayer->Draw();
 	for (int i = 0; i < 1;i++)
 	{
 		m_pEnemy[i]->Draw();

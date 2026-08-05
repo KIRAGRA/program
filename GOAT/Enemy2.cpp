@@ -13,12 +13,16 @@ namespace
 
 	constexpr int kSpeed = 7;
 
-	constexpr int kSpawnFrame = 250.0f;
+	constexpr int kSpawnFrame = 100.0f;
+
+	constexpr int kEnemyMax = 5.0f;
 
 	constexpr int kHalfSize = 50;
 
 	constexpr int kChipWidth = 16;
 	constexpr int kChipHeight = 16;
+
+
 
 	
 	
@@ -28,6 +32,7 @@ namespace
 Enemy2::Enemy2():
 	m_halfSize(0),
 	m_isHit(0),
+	m_time(0),
 	m_firstPos({ 0,0 }),
 	m_enemyHandle(-1)
 {
@@ -46,11 +51,18 @@ void Enemy2::Init(Vec2 _pos)
 	m_halfSize = kHalfSize;
 	m_pos = _pos;
 	m_firstPos = _pos;
+	m_time = 0;
 }
 
 void Enemy2::Update()
 {
-	
+	m_time++;
+
+	if (120 < m_time)
+	{
+		m_time = 0;
+	}
+
 }
 
 void Enemy2::Draw()
@@ -62,8 +74,15 @@ void Enemy2::Draw()
 	}
 	else
 	{
-		
-		DrawGraphCenter(m_pos, m_enemyHandle);
+
+		for (int i = 0;i < kEnemyMax; i++)
+		{
+			if (i < m_time)
+			{
+				DrawGraphCenter(m_pos, m_enemyHandle);
+			}
+
+		}
 	}
 
 
@@ -80,6 +99,9 @@ void Enemy2::DrawGraphCenter(Vec2 _enePos, int _graphHandle)
 
 	GetGraphSize(_graphHandle, &width, &height);
 
-	DrawGraph(_enePos.x - (width * 0.5f), _enePos.y - (height * 0.5f), _graphHandle, true);
+	//DrawTurnGraph(GetRand(_enePos.x - (width * 0.5f)), GetRand(_enePos.y - (height * 0.5f)), _graphHandle, true);
 
+	DrawTurnGraph(_enePos.x - (width * 0.5f), _enePos.y - (height * 0.5f), _graphHandle, true);
+	
+	
 }
