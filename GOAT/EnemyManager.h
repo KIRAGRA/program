@@ -1,5 +1,6 @@
 #pragma once
-class Vec2;
+#include "Enemy2.h"
+
 class EnemyManager
 {
 public:
@@ -7,9 +8,19 @@ public:
 	virtual~EnemyManager();
 
 
-
-	void Init(Vec2 _pos);
+	void Init();
 	void Update();
 	void Draw();
+
+	float GetRandPos(int _min, int _max);
+
+private:
+
+	
+
+	int m_count;
+
+	Enemy2 m_enemy[3];//
+
 };
 

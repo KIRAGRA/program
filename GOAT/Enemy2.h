@@ -41,5 +41,6 @@ protected:
 
 	int m_time;
 
+	bool isArrived;
 };
 
