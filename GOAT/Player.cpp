@@ -14,7 +14,7 @@ Player::~Player()
 
 void Player::Init()
 {
-	m_playerHandle = LoadGraph("Gun/ShootGun_result.png");
+
 }
 
 void Player::Update()
@@ -29,9 +29,5 @@ void Player::Update()
 
 void Player::Draw()
 {
-	DrawRectGraph(20, 500, 
-		0,0,4880 / 12,305,
-		m_playerHandle, false);
-
-	//DrawGraph(-100, 500, m_playerHandle, true);
+	
 }

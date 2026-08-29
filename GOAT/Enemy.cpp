@@ -54,6 +54,8 @@ void Enemy::Init(Vec2 _pos)
 	m_width = kWidth;
 	m_height = kHeight;
 
+
+
 }
 
 void Enemy::Update()

@@ -10,12 +10,13 @@ public:
 
 
 
-	void Init(Vec2 _pos);
+	void Init();
 	void Update();
 	void Draw();
 
 	void CheckHit();
 	void SetIsHit(bool _isHit) { m_isHit = _isHit; };
+	bool IsHit() const { return m_isHit; };
 	Vec2 GetPos() const { return m_pos; };
 	float GetHalfSize() const { return m_halfSize; };
 
@@ -41,6 +42,12 @@ protected:
 
 	int m_time;
 
+	int m_EnemyHp;
+
 	bool isArrived;
+
+	int m_tinkoPos;
+
+
 };
 

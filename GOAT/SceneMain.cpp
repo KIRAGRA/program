@@ -1,11 +1,11 @@
 #include "SceneMain.h"
 #include "Input.h"
 #include "Enemy.h"
-#include "EnemyManager.h"
 #include "Enemy2.h"
 #include "Vec2.h"
 #include "Player.h"
 #include <DxLib.h>
+#include <iterator>
 namespace
 {
 	constexpr int kScoreUp = 100;
@@ -15,7 +15,7 @@ SceneMain::SceneMain():
 	m_pEnemy(nullptr),
 	m_pEnemy2(nullptr),
 	m_pPlayer(nullptr),
-	m_pEnemyManager(nullptr), 
+
 	m_score(0)
 	
 	
@@ -28,7 +28,7 @@ SceneMain::~SceneMain()
 	delete m_pEnemy;
 	delete m_pEnemy2;
 	delete m_pPlayer;
-	delete m_pEnemyManager;
+
 }
 
 void SceneMain::Init()
@@ -37,8 +37,8 @@ void SceneMain::Init()
 	m_pInput->Init();
 	m_pPlayer = new Player;
 	m_pPlayer->Init();
-	m_pEnemyManager = new EnemyManager;
-	m_pEnemyManager->Init();
+	
+	
 	for (int i = 0; i < 1; i++)
 	{
 		float idx = static_cast<float>(i);
@@ -47,11 +47,11 @@ void SceneMain::Init()
 
 	}
 	//雑魚敵
-	for (int i = 0; i < 1; i++)
+	for (int i = 0; i < 3; i++)
 	{
 		float idx = static_cast<float>(i);
 		m_pEnemy2[i] = new Enemy2;
-		m_pEnemy2[i]->Init({ static_cast<float>(GetRand(200 + idx * 100)), static_cast<float>( GetRand(200 + idx * 100)) });
+		m_pEnemy2[i]->Init();
 
 	}
 
@@ -72,8 +72,8 @@ void SceneMain::Update()
 
 	m_pPlayer->Update();
 	m_pInput->Update();
-	m_pEnemyManager->Update();
-	for (int i = 0; i < 1;i++)
+	
+	for (int i = 0; i < std::size(m_pEnemy);i++)
 	{
 		if (IsLeftClick)
 		{
@@ -85,8 +85,11 @@ void SceneMain::Update()
 		m_pEnemy[i]->Update();
 	}
 	//雑魚敵
-	for (int i = 0; i < 1;i++)
+	for (int i = 0; i < std::size(m_pEnemy2);i++)
 	{
+		if (m_pEnemy2[i]->IsHit() == true)
+			continue;
+
 		if (IsLeftClick)
 		{
 			bool isHit = ColCheck(m_pEnemy2[i]->GetPos(), m_pEnemy2[i]->GetHalfSize());
@@ -107,19 +110,21 @@ void SceneMain::Draw()
 {
 	m_pInput->Draw();
 	m_pPlayer->Draw();
-	m_pEnemyManager->Draw();
-	for (int i = 0; i < 1;i++)
+	
+	for (int i = 0; i < std::size(m_pEnemy);i++)
 	{
 		m_pEnemy[i]->Draw();
 	}
 	//雑魚敵
-	for (int i = 0; i < 1;i++)
+	for (int i = 0; i < std::size(m_pEnemy2);i++)
 	{
-		//m_pEnemy2[i]->Draw();
+		m_pEnemy2[i]->Draw();
 
-
+		
 	}
  DrawFormatString(100, 100, GetColor(255, 255, 255), "SCORE: %d", m_score);
+ DrawFormatString(100, 200, GetColor(255, 255, 255), "ENEMY2: %d", std::size(m_pEnemy2));
+	
 	
 
 

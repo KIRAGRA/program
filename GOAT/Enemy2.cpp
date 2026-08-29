@@ -23,16 +23,13 @@ namespace
 	constexpr int kChipHeight = 16;
 
 
-
-	
-	
-
 }
 
 Enemy2::Enemy2():
 	m_halfSize(0),
 	m_isHit(0),
 	m_time(0),
+	m_EnemyHp(0),
 	m_firstPos({ 0,0 }),
 	m_enemyHandle(-1)
 {
@@ -42,16 +39,19 @@ Enemy2::~Enemy2()
 {
 }
 
-void Enemy2::Init(Vec2 _pos)
+void Enemy2::Init()
 {
 
 	m_enemyHandle = LoadGraph("data/car.png");
 
 	m_isHit = false;
 	m_halfSize = kHalfSize;
-	m_pos = _pos;
-	m_firstPos = _pos;
+
+	Vec2 pos = { static_cast<float>(GetRand(WIDTH)), static_cast<float>(GetRand(HEIGHT)) };
+	m_pos = pos;
+	m_firstPos = pos;
 	m_time = 0;
+	m_EnemyHp = 3;
 }
 
 void Enemy2::Update()
@@ -67,24 +67,20 @@ void Enemy2::Update()
 
 void Enemy2::Draw()
 {
+	
+
 	if (m_isHit)
 	{
 		
-		m_isHit = false;
+		
+		
 	}
 	else
 	{
-
-		for (int i = 0;i < kEnemyMax; i++)
-		{
-			if (i < m_time)
-			{
-				DrawGraphCenter(m_pos, m_enemyHandle);
-			}
-
-		}
+		DrawGraphCenter(m_pos, m_enemyHandle);
+		DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), false);
 	}
-
+	
 
 }
 

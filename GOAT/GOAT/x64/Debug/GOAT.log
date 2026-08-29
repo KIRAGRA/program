@@ -1,5 +1,5 @@
 ﻿  Enemy2.cpp
-D:\GitHub\program\GOAT\Enemy2.h(20,37): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
+D:\GitHub\program\GOAT\Enemy2.h(21,37): warning C4244: 'return': 'const int' から 'float' への変換です。データが失われる可能性があります。
   (ソース ファイル 'Enemy2.cpp' をコンパイルしています)
   
 D:\GitHub\program\GOAT\Enemy.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
@@ -19,6 +19,8 @@ D:\GitHub\program\GOAT\Input.h(1,1): warning C4819: ファイルは、現在の�
   
 D:\GitHub\program\GOAT\Enemy2.cpp(16,28): warning C4244: '初期化中': 'float' から 'const int' への変換です。データが失われる可能性があります。
 D:\GitHub\program\GOAT\Enemy2.cpp(18,26): warning C4244: '初期化中': 'float' から 'const int' への変換です。データが失われる可能性があります。
-D:\GitHub\program\GOAT\Enemy2.cpp(104,54): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-D:\GitHub\program\GOAT\Enemy2.cpp(104,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\GitHub\program\GOAT\Enemy2.cpp(81,28): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\GitHub\program\GOAT\Enemy2.cpp(81,19): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\GitHub\program\GOAT\Enemy2.cpp(100,54): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\GitHub\program\GOAT\Enemy2.cpp(100,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
   GOAT.vcxproj -> D:\GitHub\program\GOAT\x64\Debug\GOAT.exe

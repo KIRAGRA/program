@@ -33,7 +33,7 @@ private:
 	Input* m_pInput;
 	Player* m_pPlayer;
 	Enemy* m_pEnemy[1];
-	Enemy2* m_pEnemy2[1];
-	EnemyManager* m_pEnemyManager;
+	Enemy2* m_pEnemy2[3];
+
 };
 
