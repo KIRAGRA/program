@@ -62,26 +62,24 @@ void Enemy2::Update()
 	{
 		m_time = 0;
 	}
+	if (m_isHit)
+	{
+		m_pos.x = static_cast<float>(GetRand(WIDTH));
+		m_pos.y = static_cast<float>(GetRand(HEIGHT));
+		m_isHit = false;
+	}
 
 }
 
 void Enemy2::Draw()
 {
 	
-
-	if (m_isHit)
-	{
-		
-		
-		
-	}
-	else
+	if (!m_isHit)
 	{
 		DrawGraphCenter(m_pos, m_enemyHandle);
 		DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), false);
 	}
 	
-
 }
 
 void Enemy2::CheckHit()

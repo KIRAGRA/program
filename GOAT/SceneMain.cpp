@@ -47,7 +47,7 @@ void SceneMain::Init()
 
 	}
 	//雑魚敵
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < std::size(m_pEnemy2); i++)
 	{
 		float idx = static_cast<float>(i);
 		m_pEnemy2[i] = new Enemy2;
@@ -80,6 +80,10 @@ void SceneMain::Update()
 			bool isHit = BoxColCheck(m_pEnemy[i]->GetPos(), m_pEnemy[i]->GetWidth(), m_pEnemy[i]->GetHeight());
 			//m_pEnemy[i]->CheckHit();
 			m_pEnemy[i]->SetIsHit(isHit);
+			if (isHit == true)
+			{
+				m_score += kScoreUp;
+			}
 			
 		}
 		m_pEnemy[i]->Update();

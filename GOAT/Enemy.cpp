@@ -10,7 +10,7 @@ namespace
 	constexpr int kFirstPosX = -100;
 	constexpr int kFirstPosY = 100;
 
-	constexpr int kSpeed = 7;
+	constexpr int kSpeed = 25;
 
 	constexpr int kSpawnFrame = 250.0f;
 
@@ -95,6 +95,7 @@ void Enemy::Draw()
 		// 当たっていないときの処理
 		
 		DrawGraphCenter(m_pos, m_enemyHandle);
+		
 	}
 	
 
