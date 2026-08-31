@@ -46,7 +46,7 @@ protected:
 
 	bool isArrived;
 
-	int m_tinkoPos;
+	
 
 
 };

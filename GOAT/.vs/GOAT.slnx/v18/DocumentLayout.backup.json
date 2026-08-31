@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\GitHub\\program\\GOAT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\SceneMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:SceneMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\SceneMain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:SceneMain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Enemy2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,16 +19,40 @@
       "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\SceneMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:SceneMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\SceneMain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:SceneMain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Enemy2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -47,24 +63,8 @@
       "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Vec2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,20 +74,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 229,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Enemy.cpp",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Enemy.cpp",
               "RelativeDocumentMoniker": "Enemy.cpp",
               "ToolTip": "D:\\GitHub\\program\\GOAT\\Enemy.cpp",
               "RelativeToolTip": "Enemy.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-07-28T04:51:23.443Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -100,11 +101,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-07-28T01:35:37.901Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Enemy2.cpp",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Enemy2.cpp",
               "RelativeDocumentMoniker": "Enemy2.cpp",
@@ -113,11 +115,12 @@
               "ViewState": "AgIAACoAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-07-30T04:47:18.421Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "TitleScene.cpp",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\TitleScene.cpp",
               "RelativeDocumentMoniker": "TitleScene.cpp",
@@ -130,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Vec2.cpp",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Vec2.cpp",
               "RelativeDocumentMoniker": "Vec2.cpp",
@@ -142,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
@@ -154,19 +157,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "SceneMain.cpp",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\SceneMain.cpp",
               "RelativeDocumentMoniker": "SceneMain.cpp",
               "ToolTip": "D:\\GitHub\\program\\GOAT\\SceneMain.cpp",
               "RelativeToolTip": "SceneMain.cpp",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAGQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-07-28T01:31:17.644Z"
+              "WhenOpened": "2026-07-28T01:31:17.644Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Player.cpp",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Player.cpp",
               "RelativeDocumentMoniker": "Player.cpp",
@@ -180,11 +184,11 @@
         },
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "GameDefine.h",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\GameDefine.h",
               "RelativeDocumentMoniker": "GameDefine.h",
@@ -193,24 +197,25 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-07-28T01:27:20.818Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "TitleScene.h",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\TitleScene.h",
               "RelativeDocumentMoniker": "TitleScene.h",
               "ToolTip": "D:\\GitHub\\program\\GOAT\\TitleScene.h",
               "RelativeToolTip": "TitleScene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAYwAsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-08-29T15:46:41.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Player.h",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
@@ -218,23 +223,25 @@
               "RelativeToolTip": "Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-30T06:53:22.981Z"
+              "WhenOpened": "2026-07-30T06:53:22.981Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Enemy2.h",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Enemy2.h",
               "RelativeDocumentMoniker": "Enemy2.h",
               "ToolTip": "D:\\GitHub\\program\\GOAT\\Enemy2.h",
               "RelativeToolTip": "Enemy2.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-30T04:44:56.314Z"
+              "WhenOpened": "2026-07-30T04:44:56.314Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "Vec2.h",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Vec2.h",
               "RelativeDocumentMoniker": "Vec2.h",
@@ -242,35 +249,38 @@
               "RelativeToolTip": "Vec2.h",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-29T02:46:39.947Z"
+              "WhenOpened": "2026-07-29T02:46:39.947Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Enemy.h",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Enemy.h",
               "RelativeDocumentMoniker": "Enemy.h",
               "ToolTip": "D:\\GitHub\\program\\GOAT\\Enemy.h",
               "RelativeToolTip": "Enemy.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-28T04:51:12.833Z"
+              "WhenOpened": "2026-07-28T04:51:12.833Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Input.h",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Input.h",
               "RelativeDocumentMoniker": "Input.h",
               "ToolTip": "D:\\GitHub\\program\\GOAT\\Input.h",
               "RelativeToolTip": "Input.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-28T01:34:52.218Z"
+              "WhenOpened": "2026-07-28T01:34:52.218Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "SceneMain.h",
               "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\SceneMain.h",
               "RelativeDocumentMoniker": "SceneMain.h",
@@ -278,7 +288,8 @@
               "RelativeToolTip": "SceneMain.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-28T01:31:06.818Z"
+              "WhenOpened": "2026-07-28T01:31:06.818Z",
+              "EditorCaption": ""
             }
           ]
         }

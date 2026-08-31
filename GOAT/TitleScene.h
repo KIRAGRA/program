@@ -9,6 +9,6 @@ public:
 	void Update();
 	void Draw();
 
-	int m_tinko;
+
 };
 
