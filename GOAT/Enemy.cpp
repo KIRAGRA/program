@@ -31,6 +31,7 @@ Enemy::Enemy() :
 	m_firstPos({0,0}),
 	m_enemyHp(0),
 	m_enemyHandle(-1),
+	m_Bg(-1),
 	m_width(0.0f),
 	m_height(0.0f)
 {
@@ -44,6 +45,8 @@ void Enemy::Init(Vec2 _pos)
 {
 
 	m_enemyHandle = LoadGraph("data/car.png");
+
+	m_Bg = LoadGraph("jail.jpg");
 
 	m_enemyHp = kEnemyHp;
 	m_isHit = false;
@@ -85,6 +88,7 @@ void Enemy::Update()
 
 void Enemy::Draw()
 {
+	DrawGraph(0, 0, m_Bg, true);
 	if (m_isHit == true)
 	{
 		printfDx("HIT\n");

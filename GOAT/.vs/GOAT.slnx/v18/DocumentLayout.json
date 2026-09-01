@@ -1,70 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\program\\GOAT\\",
+  "WorkspaceRootPath": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\SceneMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:SceneMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Enemy2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\SceneMain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:SceneMain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Enemy2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\SceneMain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:SceneMain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:TitleScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\SceneMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:SceneMain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:GameDefine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:TitleScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\Vec2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Vec2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:Vec2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|D:\\GitHub\\program\\GOAT\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{81DA3FA0-0B38-492D-968B-CD8390709EC9}|GOAT.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,28 +74,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 229,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "Enemy.cpp",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy.cpp",
               "RelativeDocumentMoniker": "Enemy.cpp",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy.cpp",
               "RelativeToolTip": "Enemy.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-07-28T04:51:23.443Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "Input.cpp",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Input.cpp",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Input.cpp",
               "RelativeDocumentMoniker": "Input.cpp",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Input.cpp",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Input.cpp",
               "RelativeToolTip": "Input.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -104,36 +104,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Enemy2.cpp",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Enemy2.cpp",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy2.cpp",
               "RelativeDocumentMoniker": "Enemy2.cpp",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Enemy2.cpp",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy2.cpp",
               "RelativeToolTip": "Enemy2.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAE8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-07-30T04:47:18.421Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TitleScene.cpp",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\TitleScene.cpp",
-              "RelativeDocumentMoniker": "TitleScene.cpp",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\TitleScene.cpp",
-              "RelativeToolTip": "TitleScene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-08-29T15:46:46.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Vec2.cpp",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Vec2.cpp",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Vec2.cpp",
               "RelativeDocumentMoniker": "Vec2.cpp",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Vec2.cpp",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Vec2.cpp",
               "RelativeToolTip": "Vec2.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -141,36 +130,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "main.cpp",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\main.cpp",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-07-28T01:26:25.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "SceneMain.cpp",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\SceneMain.cpp",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\SceneMain.cpp",
               "RelativeDocumentMoniker": "SceneMain.cpp",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\SceneMain.cpp",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\SceneMain.cpp",
               "RelativeToolTip": "SceneMain.cpp",
-              "ViewState": "AgIAABQAAAAAAAAAAAAYwB8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAACMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-07-28T01:31:17.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-28T01:31:17.644Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "TitleScene.cpp",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\TitleScene.cpp",
+              "RelativeDocumentMoniker": "TitleScene.cpp",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\TitleScene.cpp",
+              "RelativeToolTip": "TitleScene.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-29T15:46:46.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Player.cpp",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Player.cpp",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Player.cpp",
               "RelativeDocumentMoniker": "Player.cpp",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Player.cpp",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Player.cpp",
               "RelativeToolTip": "Player.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -180,66 +180,65 @@
         },
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "GameDefine.h",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\GameDefine.h",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\GameDefine.h",
               "RelativeDocumentMoniker": "GameDefine.h",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\GameDefine.h",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\GameDefine.h",
               "RelativeToolTip": "GameDefine.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-07-28T01:27:20.818Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "TitleScene.h",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\TitleScene.h",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\TitleScene.h",
               "RelativeDocumentMoniker": "TitleScene.h",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\TitleScene.h",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\TitleScene.h",
               "RelativeToolTip": "TitleScene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-08-29T15:46:41.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Player.h",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Player.h",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Player.h",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Player.h",
               "RelativeToolTip": "Player.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAYwBQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-30T06:53:22.981Z",
+              "WhenOpened": "2026-07-30T06:53:22.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy2.h",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy2.h",
+              "RelativeDocumentMoniker": "Enemy2.h",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy2.h",
+              "RelativeToolTip": "Enemy2.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-07-30T04:44:56.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Enemy2.h",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Enemy2.h",
-              "RelativeDocumentMoniker": "Enemy2.h",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Enemy2.h",
-              "RelativeToolTip": "Enemy2.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-07-30T04:44:56.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Vec2.h",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Vec2.h",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Vec2.h",
               "RelativeDocumentMoniker": "Vec2.h",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Vec2.h",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Vec2.h",
               "RelativeToolTip": "Vec2.h",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -249,21 +248,21 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Enemy.h",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Enemy.h",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy.h",
               "RelativeDocumentMoniker": "Enemy.h",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Enemy.h",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Enemy.h",
               "RelativeToolTip": "Enemy.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-07-28T04:51:12.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Input.h",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\Input.h",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Input.h",
               "RelativeDocumentMoniker": "Input.h",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\Input.h",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\Input.h",
               "RelativeToolTip": "Input.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -271,13 +270,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "SceneMain.h",
-              "DocumentMoniker": "D:\\GitHub\\program\\GOAT\\SceneMain.h",
+              "DocumentMoniker": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\SceneMain.h",
               "RelativeDocumentMoniker": "SceneMain.h",
-              "ToolTip": "D:\\GitHub\\program\\GOAT\\SceneMain.h",
+              "ToolTip": "C:\\Users\\kira\\Documents\\GitHub\\program\\GOAT\\SceneMain.h",
               "RelativeToolTip": "SceneMain.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-07-28T01:31:06.818Z"
             }

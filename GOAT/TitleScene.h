@@ -9,6 +9,11 @@ public:
 	void Update();
 	void Draw();
 
+	bool GetIsEnd() { return m_isEnd; };
+
+private:
+
+	bool m_isEnd;
 
 };
 

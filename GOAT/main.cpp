@@ -34,8 +34,8 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		ClearDrawScreen();
 
 		// 画面にFPSを表示
-		DrawFormatString(0, 0, GetColor(255, 255, 255), "FPS: %d", currentFps);
-		DrawFormatString(0, 20, GetColor(255, 255, 255), "Total Frames: %d", totalFrames);
+		//DrawFormatString(0, 0, GetColor(255, 255, 255), "FPS: %d", currentFps);
+		//DrawFormatString(0, 20, GetColor(255, 255, 255), "Total Frames: %d", totalFrames);
 
 		m_pSceneMain->Update();
 		m_pSceneMain->Draw();

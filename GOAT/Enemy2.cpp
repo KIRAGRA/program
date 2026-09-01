@@ -42,7 +42,7 @@ Enemy2::~Enemy2()
 void Enemy2::Init()
 {
 
-	m_enemyHandle = LoadGraph("data/car.png");
+	m_enemyHandle = LoadGraph("data/police.png");
 
 	m_isHit = false;
 	m_halfSize = kHalfSize;
@@ -77,7 +77,7 @@ void Enemy2::Draw()
 	if (!m_isHit)
 	{
 		DrawGraphCenter(m_pos, m_enemyHandle);
-		DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), false);
+		//DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), false);
 	}
 	
 }
