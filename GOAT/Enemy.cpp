@@ -19,7 +19,7 @@ namespace
 	constexpr int kEnemyHp = 1;
 
 
-	constexpr float kWidth = 200;
+	constexpr float kWidth = 350;
 	constexpr float kHeight = 200;
 
 
@@ -93,13 +93,15 @@ void Enemy::Draw()
 	{
 		printfDx("HIT\n");
 		m_isHit = false;
+
 	}
 	else if(m_isHit == false)
 	{
 		// 当たっていないときの処理
 		
+
 		DrawGraphCenter(m_pos, m_enemyHandle);
-		
+		DrawBoxCenter(m_pos, m_width, m_height, GetColor(255, 0, 0));
 	}
 	
 

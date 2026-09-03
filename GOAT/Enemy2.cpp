@@ -17,7 +17,7 @@ namespace
 
 	constexpr int kEnemyMax = 5.0f;
 
-	constexpr int kHalfSize = 50;
+	constexpr int kHalfSize = 120;
 
 	constexpr int kChipWidth = 16;
 	constexpr int kChipHeight = 16;
@@ -77,7 +77,7 @@ void Enemy2::Draw()
 	if (!m_isHit)
 	{
 		DrawGraphCenter(m_pos, m_enemyHandle);
-		//DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), false);
+		DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), false);
 	}
 	
 }

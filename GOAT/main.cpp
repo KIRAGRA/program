@@ -7,7 +7,8 @@ using namespace Game;
 
 int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nCmdShow)
 {
-	ChangeWindowMode(1);          // windowモードで起動
+	ChangeWindowMode(false);// windowモードで起動
+
 	SetGraphMode(WIDTH, HEIGHT, 32);  // ウィンドウサイズを16：9に
 	SetMainWindowText("Goat the Road"); // ウィンドウのタイトル表示を変更
 
@@ -25,6 +26,8 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 	SceneMain* m_pSceneMain = new SceneMain;
 	m_pSceneMain->Init();
+
+	SetMouseDispFlag(true); // マウスカーソルを表示する
 
 	while (ProcessMessage() == 0)
 	{

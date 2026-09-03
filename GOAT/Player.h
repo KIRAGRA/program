@@ -9,6 +9,8 @@ public:
 	void Update();
 	void Draw();
 
+
+
 private:
 
 	int m_bulletAttack;

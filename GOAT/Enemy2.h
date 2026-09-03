@@ -30,10 +30,10 @@ protected:
 	private:
 
 	Vec2 m_firstPos;
-		
 	//enemyサイズ
 	int m_halfSize;
 
+		
 	int m_score;
 
 	bool m_isHit;
