@@ -101,7 +101,7 @@ void Enemy::Draw()
 		
 
 		DrawGraphCenter(m_pos, m_enemyHandle);
-		DrawBoxCenter(m_pos, m_width, m_height, GetColor(255, 0, 0));
+		//DrawBoxCenter(m_pos, m_width, m_height, GetColor(255, 0, 0));
 	}
 	
 
