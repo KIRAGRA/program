@@ -25,7 +25,7 @@ namespace
 
 }
 
-Enemy2::Enemy2():
+Enemy2::Enemy2() :
 	m_halfSize(0),
 	m_isHit(0),
 	m_time(0),
@@ -73,13 +73,13 @@ void Enemy2::Update()
 
 void Enemy2::Draw()
 {
-	
+
 	if (!m_isHit)
 	{
 		DrawGraphCenter(m_pos, m_enemyHandle);
 		//DrawCircle(m_pos.x, m_pos.y, m_halfSize, GetColor(255, 0, 0), false);
 	}
-	
+
 }
 
 void Enemy2::CheckHit()
@@ -96,6 +96,6 @@ void Enemy2::DrawGraphCenter(Vec2 _enePos, int _graphHandle)
 	//DrawTurnGraph(GetRand(_enePos.x - (width * 0.5f)), GetRand(_enePos.y - (height * 0.5f)), _graphHandle, true);
 
 	DrawTurnGraph(_enePos.x - (width * 0.5f), _enePos.y - (height * 0.5f), _graphHandle, true);
-	
-	
+
+
 }

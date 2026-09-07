@@ -15,5 +15,7 @@ private:
 
 	bool m_isEnd;
 
+
+
 };
 

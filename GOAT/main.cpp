@@ -1,13 +1,12 @@
 ﻿#include <DxLib.h>
-#include "SceneMain.h"
-
+#include "SceneManager.h"
 #include "GameDefine.h"
 using namespace Game;
 
 
 int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nCmdShow)
 {
-	ChangeWindowMode(false);// windowモードで起動
+	ChangeWindowMode(true);// windowモードで起動
 
 	SetGraphMode(WIDTH, HEIGHT, 32);  // ウィンドウサイズを16：9に
 	SetMainWindowText("Goat the Road"); // ウィンドウのタイトル表示を変更
@@ -24,8 +23,8 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	int startTime = GetNowCount();
 	int totalFrames = 0;
 
-	SceneMain* m_pSceneMain = new SceneMain;
-	m_pSceneMain->Init();
+	SceneManager* m_pSceneManager = new SceneManager;
+	m_pSceneManager->Init();
 
 	SetMouseDispFlag(true); // マウスカーソルを表示する
 
@@ -40,8 +39,8 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		//DrawFormatString(0, 0, GetColor(255, 255, 255), "FPS: %d", currentFps);
 		//DrawFormatString(0, 20, GetColor(255, 255, 255), "Total Frames: %d", totalFrames);
 
-		m_pSceneMain->Update();
-		m_pSceneMain->Draw();
+		m_pSceneManager->Update();
+		m_pSceneManager->Draw();
 
 
 		ScreenFlip();

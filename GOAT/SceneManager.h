@@ -1,5 +1,8 @@
 #pragma once
 
+class SceneMain;
+class TitleScene;
+class ResultScene;
 enum SceneType
 {
 	Title,
@@ -11,19 +14,25 @@ enum SceneType
 
 class SceneManager
 {
-	SceneManager();
+public:
+	
+
+	void ChangeScene(SceneType nextscene);SceneManager();
 	virtual~SceneManager();
 
 	void Init();
 	void Update();
 	void Draw();
 
-	void ChangeScene(SceneType nextscene);
-
 private:
 	 
 	SceneType m_nowScene;
 
+	SceneMain* m_pSceneMain;
+
+	TitleScene* m_pTitleScene;
+
+	ResultScene* m_pResultScene;
 
 };
 

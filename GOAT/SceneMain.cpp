@@ -10,15 +10,15 @@ namespace
 {
 	constexpr int kScoreUp = 100;
 }
-SceneMain::SceneMain():
+SceneMain::SceneMain() :
 	m_pInput(nullptr),
 	m_pEnemy(nullptr),
 	m_pEnemy2(nullptr),
 	m_pPlayer(nullptr),
 
 	m_score(0)
-	
-	
+
+
 {
 }
 
@@ -33,17 +33,20 @@ SceneMain::~SceneMain()
 
 void SceneMain::Init()
 {
+	m_score = 0;
+	m_count = 0;
 	m_pInput = new Input;
 	m_pInput->Init();
 	m_pPlayer = new Player;
 	m_pPlayer->Init();
-	
-	
+	m_isEnd = false;
+
+
 	for (int i = 0; i < 1; i++)
 	{
 		float idx = static_cast<float>(i);
 		m_pEnemy[i] = new Enemy;
-		m_pEnemy[i]->Init({ -100 + idx *100, 200 });
+		m_pEnemy[i]->Init({ -100 + idx * 100, 200 });
 
 	}
 	//雑魚敵
@@ -55,15 +58,19 @@ void SceneMain::Init()
 
 	}
 
-	
-	
+
+
 
 }
 
 void SceneMain::Update()
 {
+	m_count++;
+	if (m_count > 600)
+	{
+		m_isEnd = true;
+	}
 	
-
 	//左クリックしているかを判定
 	bool IsLeftClick = m_pInput->IsTrigger(MOUSE_INPUT_LEFT);
 
@@ -72,7 +79,7 @@ void SceneMain::Update()
 
 	m_pPlayer->Update();
 	m_pInput->Update();
-	
+
 	for (int i = 0; i < std::size(m_pEnemy);i++)
 	{
 		if (IsLeftClick)
@@ -84,7 +91,7 @@ void SceneMain::Update()
 			{
 				m_score += kScoreUp;
 			}
-			
+
 		}
 		m_pEnemy[i]->Update();
 	}
@@ -103,8 +110,8 @@ void SceneMain::Update()
 			{
 				m_score += kScoreUp;
 			}
-		
-		
+
+
 		}
 		m_pEnemy2[i]->Update();
 	}
@@ -114,7 +121,7 @@ void SceneMain::Draw()
 {
 	m_pInput->Draw();
 	m_pPlayer->Draw();
-	
+
 	for (int i = 0; i < std::size(m_pEnemy);i++)
 	{
 		m_pEnemy[i]->Draw();
@@ -124,12 +131,12 @@ void SceneMain::Draw()
 	{
 		m_pEnemy2[i]->Draw();
 
-		
+
 	}
- DrawFormatString(100, 100, GetColor(255, 255, 255), "SCORE: %d", m_score);
- DrawFormatString(100, 200, GetColor(255, 255, 255), "ENEMY2: %d", std::size(m_pEnemy2));
-	
-	
+	DrawFormatString(100, 100, GetColor(255, 255, 255), "SCORE: %d", m_score);
+	DrawFormatString(100, 200, GetColor(255, 255, 255), "ENEMY2: %d", std::size(m_pEnemy2));
+
+	DrawFormatString(100, 300, GetColor(255, 255, 255), "TIME::%d",10 - static_cast<int>(m_count / 60));
 
 
 }
@@ -166,7 +173,7 @@ bool SceneMain::ColCheck(Vec2 _enePos, float _halfSize)
 	}
 }
 
-bool SceneMain::BoxColCheck(Vec2 _enePos, float _width,float _height)
+bool SceneMain::BoxColCheck(Vec2 _enePos, float _width, float _height)
 {
 	Vec2 mousePos = m_pInput->GetMousePos();
 
